@@ -1,0 +1,8 @@
+name: /app/parsers/ncbr_covid
+channels:
+  - defaults
+dependencies:
+  - blas=1.0=openblas
+  - nomkl=3.0=0
+prefix: /app/parsers/ncbr_covid
+
