@@ -62,7 +62,7 @@ class XLSParser:
             covid_results['Norma'].append('0 - 0')
             covid_results['Jedn.'].append('Obecność')
 
-        data.append(pd.DataFrame.from_dict(covid_results, orient='columns'))
+        data = data.append(pd.DataFrame.from_dict(covid_results, orient='columns'))
         return data, name
 
 # %%
