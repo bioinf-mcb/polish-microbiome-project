@@ -1,3 +1,10 @@
 # General
 .gitignore
 **/__pycache__
+
+#Snakemake results
+#exclude everything
+/shallow-shotgun-analysis-workflow/results/*
+
+#exceptopion to the rule
+!/shallow-shotgun-analysis-workflow/results/.gitkeep
