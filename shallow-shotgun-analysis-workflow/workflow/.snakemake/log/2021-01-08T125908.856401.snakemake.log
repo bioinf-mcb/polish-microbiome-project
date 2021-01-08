@@ -1,0 +1,43 @@
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	bowtie2
+	1	bowtie2_build
+	2	fastp_se
+	2	minimap2
+	1	minimap2_index
+	1	multiqc
+	2	samtools_decontaminated
+	1	woltka_classify
+	1	woltka_gotu
+	14
+Select jobs to execute...
+
+[Fri Jan  8 12:59:08 2021]
+rule fastp_se:
+    input: ../../../raw_fastqs/ERR2242499.fastq.gz
+    output: ../results/QC_reads/ERR2242499_fastp.fastq, ../results/QC_reads/failed/ERR2242499_failed.fastq, ../results/QC_reads/report/ERR2242499_fastp.json, ../results/QC_reads/report/ERR2242499.html
+    log: ../results/logs/fastp/se/ERR2242499.log
+    jobid: 2
+    benchmark: ../results/benchmarks/fastp/se/ERR2242499.tsv
+    wildcards: sample=ERR2242499
+    threads: 6
+
+[Fri Jan  8 12:59:09 2021]
+Error in rule fastp_se:
+    jobid: 2
+    output: ../results/QC_reads/ERR2242499_fastp.fastq, ../results/QC_reads/failed/ERR2242499_failed.fastq, ../results/QC_reads/report/ERR2242499_fastp.json, ../results/QC_reads/report/ERR2242499.html
+    log: ../results/logs/fastp/se/ERR2242499.log (check log file(s) for error message)
+    shell:
+        fastp -i ../../../raw_fastqs/ERR2242499.fastq.gz -o ../results/QC_reads/ERR2242499_fastp.fastq --failed_out ../results/QC_reads/failed/ERR2242499_failed.fastq --adapter_fasta {config['fastp']['adapters']} -q 15 -u 40 -y -p -j ../results/QC_reads/report/ERR2242499_fastp.json -h ../results/QC_reads/report/ERR2242499.html -w 6
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/.snakemake/log/2021-01-08T125908.856401.snakemake.log

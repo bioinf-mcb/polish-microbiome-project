@@ -1,0 +1,172 @@
+#Load configuration dicts
+
+configfile: "../config/config_template.yml"
+configuration = config.copy()
+
+configfile: "../config/sample.yml"
+samples = config.copy()
+
+del config
+
+rule all:   #4
+    input:
+        "../results/multiqc/multiqc_report.html",
+#        expand("bowtie2/mapped/{sample}_aligned.sam", sample=samples['samples']),
+        "../results/woltka/gotu/table.biom",
+        directory("../results/woltka/classify")
+
+def get_sample(wildcards):
+    """Get the sample name inferred from the wildcards"""
+    return samples["samples"][wildcards.sample]
+
+rule fastp_se: #12
+    input:
+        [get_sample]
+    output:
+        trimmed="../results/QC_reads/{sample}_fastp.fastq",
+        html="../results/QC_reads/report/{sample}_fastp.html",
+        json="../results/QC_reads/report/{sample}_fastp.json"
+#	failed_QC="../results/QC_reads/failed_QC/{sample}_failed.fastq"   #co z odczytami, które nie przeszły filtra
+    log:
+        "../results/logs/fastp/se/{sample}.log"
+    params:
+        adapters="--adapter_fasta ../../../prebuilt_data/adapters.fasta",
+        extra="-q 15 -u 40 -y -p -w 5"
+    threads: 8
+#    benchmark:
+#        "../results/benchmarks/fastp/se/{sample}.tsv"
+    wrapper:
+        "0.68.0/bio/fastp"
+
+rule multiqc:   #29
+    input:
+        expand("../results/QC_reads/report/{sample}_fastp.json", sample=samples['samples'])
+    output:
+        "../results/multiqc/multiqc_report.html"
+    params:
+        ""  # Optional: extra parameters for multiqc.
+    log:
+        "../results/logs/multiqc.log"
+    wrapper:
+        "0.68.0/bio/multiqc"
+
+rule minimap2_index:  #42
+    input:
+        target="../../../prebuilt_data/GCA_000001405.15_GRCh38_genomic.fna.gz",
+        dependancy = expand("../results/QC_reads/{sample}_fastp.fastq", sample=samples['samples'])
+    output:
+        "../results/minimap2/index/GRCh38.mmi"
+    log:
+        "../results/logs/minimap2/index/GRCh38.mmi.log"
+    params:
+        extra="-a -x map-ont"  # optional additional args
+    threads: 3
+    benchmark:
+        "../results/benchmarks/minimap/index/GRCh38.mmi.tsv"
+    wrapper:
+        "0.68.0/bio/minimap2/index"
+
+rule minimap2:   #55
+    input:
+        reads = rules.fastp_se.output.trimmed,
+        index = rules.minimap2_index.output
+    output:
+        "../results/minimap2/{sample}.sam"
+    log:
+        "../results/logs/minimap2/mapped/{sample}.log"
+    params:
+        extra="-x map-ont -a"
+    threads: 8
+    benchmark:
+        "../results/benchmarks/minimap/mapped/{sample}.tsv"
+    shell:
+        "minimap2 {input.index} {input.reads} -t {threads} {params.extra} > {output}"
+
+rule samtools_decontaminated:   # 69  from minimap2 mapping extract only non-human reads
+    input:
+        rules.minimap2.output
+    output:
+        "../results/samtools_decontaminated/{sample}_decontaminated.fastq.gz"
+    log:
+        "../results/logs/samtools/{sample}.log"
+    benchmark:
+        "../results/benchmarks/samtools/{sample}.tsv"
+    shell:
+        "samtools view -buSh -f 4 {input} | samtools fastq - | pigz -9 -c - > {output}"
+
+#Challenges to adress: 
+#	1) resolve how to diffrentiate between small and large index
+
+rule bowtie2_build: #78
+    input:
+        ref = "../../../prebuilt_data/rep82.fna",
+        dependancy = expand("../results/samtools_decontaminated/{sample}_decontaminated.fastq.gz", sample=samples['samples'])
+    output:
+        multiext(
+            "../results/bowtie2/index/idx",
+            ".1.bt2l", ".2.bt2l", ".3.bt2l", ".4.bt2l", ".rev.1.bt2l", ".rev.2.bt2l",
+        ),
+    log:
+        ["../results/logs/bowtie2/index/idx{bt2l}.log".format(bt2l=bt2l) for bt2l in [".1.bt2l", ".2.bt2l", ".3.bt2l", 
+         ".4.bt2l", ".rev.1.bt2l", ".rev.2.bt2l"]]
+    params:
+        basename = "bowtie2/index/idx",
+        extra="--large-index"
+#    benchmark:
+#        ["benchmarks/bowtie2/index/idx{bt2l}.log".format(bt2l=bt2l) for bt2l in [".1.bt2l", ".2.bt2l", ".3.bt2l", 
+#         ".4.bt2l", ".rev.1.bt2l", ".rev.2.bt2l"]]
+    threads: 8   
+    shell:
+        "bowtie2-build {input.ref} {params.basename} -t {threads} {params.extra}"
+
+rule bowtie2:   #97
+    input:	
+        sample=rules.samtools_decontaminated.output,
+        dependancy = multiext(
+            "../results/bowtie2/index/idx",
+            ".1.bt2l", ".2.bt2l", ".3.bt2l", ".4.bt2l", ".rev.1.bt2l", ".rev.2.bt2l",
+        ),
+    output:
+        "../results/bowtie2/mapped/{sample}_aligned.sam"
+    log:
+        "../results/logs/bowtie2/{sample}.log"
+    params:
+        index="bowtie2/index/idx",  # prefix of reference genome index (built with bowtie2-build)
+        extra="--met-file --reorder --very-sensitive --np 1 --mp 1,1 --rdg 0,1 --rfg 0,1 --score-min L,0,-0.02 --no-hd --no-unal -k 16"
+    threads: 10  # Use at least two threads
+    benchmark:
+        "../results/benchmarks/bowtie2/mapped/{sample}.tsv"
+    shell:
+        "bowtie2 {params.extra} -x {params.index} -U {input} -S {output} -p {threads}"
+
+rule woltka_gotu:   #112
+     input:
+        expand("../results/bowtie2/mapped/{sample}_aligned.sam", sample=samples['samples'])
+     output:
+       "../results/woltka/gotu/table.biom"
+     log:
+        "../results/logs/woltka/gotu.log"
+     params:
+        basename="bowtie2/mapped",
+        extra= ""
+     benchmark:
+        "../results/benchmarks/woltka/gotu.tsv"
+     shell:
+        "woltka gotu -i {params.basename} -o {output} {params.extra}"
+
+rule woltka_classify: #125
+     input:
+        expand("../results/bowtie2/mapped/{sample}_aligned.sam", sample=samples['samples'])
+     output:
+        directory("../results/woltka/classify")
+     log:
+        "../results/logs/woltka/classify.log"
+     params:
+        basename = "bowtie2/mapped",
+        rank = "genus,species",   # if you specify only one rank it will throw output error
+        hierarchy="--map ../../../prebuilt_data/taxids.txt --nodes ../../../prebuilt_data/nodes.dmp --names ../../../prebuilt_data/names.dmp",
+        extra = ""
+     benchmark:
+        "../results/benchmarks/woltka/classify.tsv"
+     shell:
+        "woltka classify -i {params.basename} --rank {params.rank} {params.hierarchy} {params.extra} -o {output}"

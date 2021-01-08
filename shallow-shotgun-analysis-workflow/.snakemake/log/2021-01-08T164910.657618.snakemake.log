@@ -1,0 +1,32 @@
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+Building DAG of jobs...
+Relative file path './../../prebuilt_data/GCA_000001405.15_GRCh38_genomic.fna.gz' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './../../prebuilt_data/rep82.fna' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	bowtie2
+	1	bowtie2_build
+	2	minimap2
+	1	minimap2_index
+	2	samtools_decontaminated
+	1	woltka_classify
+	1	woltka_gotu
+	11
+Select jobs to execute...
+
+[Fri Jan  8 16:49:10 2021]
+rule minimap2_index:
+    input: ./../../prebuilt_data/GCA_000001405.15_GRCh38_genomic.fna.gz, results/QC_reads/ERR2242499_fastp.fastq, results/QC_reads/ERR2242481_fastp.fastq
+    output: results/minimap2/index/GRCh38.mmi
+    log: results/logs/minimap2/index/GRCh38.mmi.log
+    jobid: 8
+    benchmark: results/benchmarks/minimap/index/GRCh38.mmi.tsv
+    threads: 6
+
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

@@ -1,0 +1,4 @@
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+NameError in line 40 of /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile:
+name 'config' is not defined
+  File "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile", line 40, in <module>

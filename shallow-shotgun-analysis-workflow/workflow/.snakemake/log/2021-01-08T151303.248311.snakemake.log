@@ -1,0 +1,110 @@
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	bowtie2
+	1	bowtie2_build
+	2	minimap2
+	1	minimap2_index
+	2	samtools_decontaminated
+	1	woltka_classify
+	1	woltka_gotu
+	11
+Select jobs to execute...
+
+[Fri Jan  8 15:13:03 2021]
+rule minimap2_index:
+    input: ../../../prebuilt_data/GCA_000001405.15_GRCh38_genomic.fna.gz, ../results/QC_reads/ERR2242499_fastp.fastq, ../results/QC_reads/ERR2242481_fastp.fastq
+    output: ../results/minimap2/index/GRCh38.mmi
+    log: ../results/logs/minimap2/index/GRCh38.mmi.log
+    jobid: 8
+    benchmark: ../results/benchmarks/minimap/index/GRCh38.mmi.tsv
+    threads: 8
+
+[Fri Jan  8 15:30:30 2021]
+Finished job 8.
+1 of 11 steps (9%) done
+Select jobs to execute...
+
+[Fri Jan  8 15:30:30 2021]
+rule minimap2:
+    input: ../results/QC_reads/ERR2242499_fastp.fastq, ../results/minimap2/index/GRCh38.mmi
+    output: ../results/minimap2/ERR2242499.sam
+    log: ../results/logs/minimap2/mapped/ERR2242499.log
+    jobid: 7
+    benchmark: ../results/benchmarks/minimap/mapped/ERR2242499.tsv
+    wildcards: sample=ERR2242499
+    threads: 8
+
+[Fri Jan  8 15:31:05 2021]
+Finished job 7.
+2 of 11 steps (18%) done
+Select jobs to execute...
+
+[Fri Jan  8 15:31:05 2021]
+rule samtools_decontaminated:
+    input: ../results/minimap2/ERR2242499.sam
+    output: ../results/samtools_decontaminated/ERR2242499_decontaminated.fastq.gz
+    log: ../results/logs/samtools/ERR2242499.log
+    jobid: 6
+    benchmark: ../results/benchmarks/samtools/ERR2242499.tsv
+    wildcards: sample=ERR2242499
+
+
+[Fri Jan  8 15:31:05 2021]
+rule minimap2:
+    input: ../results/QC_reads/ERR2242481_fastp.fastq, ../results/minimap2/index/GRCh38.mmi
+    output: ../results/minimap2/ERR2242481.sam
+    log: ../results/logs/minimap2/mapped/ERR2242481.log
+    jobid: 11
+    benchmark: ../results/benchmarks/minimap/mapped/ERR2242481.tsv
+    wildcards: sample=ERR2242481
+    threads: 8
+
+[Fri Jan  8 15:31:20 2021]
+Finished job 6.
+3 of 11 steps (27%) done
+[Fri Jan  8 15:31:46 2021]
+Finished job 11.
+4 of 11 steps (36%) done
+Select jobs to execute...
+
+[Fri Jan  8 15:31:46 2021]
+rule samtools_decontaminated:
+    input: ../results/minimap2/ERR2242481.sam
+    output: ../results/samtools_decontaminated/ERR2242481_decontaminated.fastq.gz
+    log: ../results/logs/samtools/ERR2242481.log
+    jobid: 10
+    benchmark: ../results/benchmarks/samtools/ERR2242481.tsv
+    wildcards: sample=ERR2242481
+
+[Fri Jan  8 15:32:03 2021]
+Finished job 10.
+5 of 11 steps (45%) done
+Select jobs to execute...
+
+[Fri Jan  8 15:32:03 2021]
+rule bowtie2_build:
+    input: ../../../prebuilt_data/rep82.fna, ../results/samtools_decontaminated/ERR2242499_decontaminated.fastq.gz, ../results/samtools_decontaminated/ERR2242481_decontaminated.fastq.gz
+    output: ../results/bowtie2/index/idx.1.bt2l, ../results/bowtie2/index/idx.2.bt2l, ../results/bowtie2/index/idx.3.bt2l, ../results/bowtie2/index/idx.4.bt2l, ../results/bowtie2/index/idx.rev.1.bt2l, ../results/bowtie2/index/idx.rev.2.bt2l
+    log: ../results/logs/bowtie2/index/idx.1.bt2l.log, ../results/logs/bowtie2/index/idx.2.bt2l.log, ../results/logs/bowtie2/index/idx.3.bt2l.log, ../results/logs/bowtie2/index/idx.4.bt2l.log, ../results/logs/bowtie2/index/idx.rev.1.bt2l.log, ../results/logs/bowtie2/index/idx.rev.2.bt2l.log
+    jobid: 9
+    threads: 8
+
+[Fri Jan  8 15:32:03 2021]
+Error in rule bowtie2_build:
+    jobid: 9
+    output: ../results/bowtie2/index/idx.1.bt2l, ../results/bowtie2/index/idx.2.bt2l, ../results/bowtie2/index/idx.3.bt2l, ../results/bowtie2/index/idx.4.bt2l, ../results/bowtie2/index/idx.rev.1.bt2l, ../results/bowtie2/index/idx.rev.2.bt2l
+    log: ../results/logs/bowtie2/index/idx.1.bt2l.log, ../results/logs/bowtie2/index/idx.2.bt2l.log, ../results/logs/bowtie2/index/idx.3.bt2l.log, ../results/logs/bowtie2/index/idx.4.bt2l.log, ../results/logs/bowtie2/index/idx.rev.1.bt2l.log, ../results/logs/bowtie2/index/idx.rev.2.bt2l.log (check log file(s) for error message)
+    shell:
+        bowtie2-build ../../../prebuilt_data/rep82.fna bowtie2/index/idx -t 8 --large-index
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/.snakemake/log/2021-01-08T151303.248311.snakemake.log

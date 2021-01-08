@@ -1,0 +1,53 @@
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+The flag 'directory' used in rule all is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	bowtie2
+	1	bowtie2_build
+	2	minimap2
+	1	minimap2_index
+	1	multiqc
+	2	samtools_decontaminated
+	1	woltka_classify
+	1	woltka_gotu
+	12
+Select jobs to execute...
+
+[Fri Jan  8 12:32:31 2021]
+rule minimap2_index:
+    input: ../../../prebuilt_data/GCA_000001405.15_GRCh38_genomic.fna.gz, ../results/QC_reads/ERR2242499_fastp.fastq, ../results/QC_reads/ERR2242481_fastp.fastq
+    output: ../results/minimap2/index/GRCh38.mmi
+    log: ../results/logs/minimap2/index/GRCh38.mmi.log
+    jobid: 8
+    benchmark: ../results/benchmarks/minimap/index/GRCh38.mmi.tsv
+    threads: 3
+
+
+[Fri Jan  8 12:32:31 2021]
+rule multiqc:
+    input: ../results/QC_reads/report/ERR2242499_fastp.json, ../results/QC_reads/report/ERR2242481_fastp.json
+    output: ../results/multiqc
+    log: ../results/logs/multiqc.log
+    jobid: 1
+
+[Fri Jan  8 12:32:33 2021]
+Finished job 1.
+1 of 12 steps (8%) done
+Terminating processes on user request, this might take some time.
+[Fri Jan  8 12:33:13 2021]
+Error in rule minimap2_index:
+    jobid: 8
+    output: ../results/minimap2/index/GRCh38.mmi
+    log: ../results/logs/minimap2/index/GRCh38.mmi.log (check log file(s) for error message)
+    shell:
+        minimap2 -t 3 -d ../results/minimap2/index/GRCh38.mmi ../../../prebuilt_data/GCA_000001405.15_GRCh38_genomic.fna.gz ../results/QC_reads/ERR2242499_fastp.fastq ../results/QC_reads/ERR2242481_fastp.fastq
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job minimap2_index since they might be corrupted:
+../results/minimap2/index/GRCh38.mmi
+Complete log: /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/.snakemake/log/2021-01-08T123231.352872.snakemake.log

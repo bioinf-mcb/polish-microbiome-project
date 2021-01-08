@@ -5,6 +5,12 @@
 #Snakemake results
 #exclude everything
 /shallow-shotgun-analysis-workflow/results/*
+/shallow-shotgun-analysis-workflow/resources/*
+shallow-shotgun-analysis-workflow/workflow/.snakemake/*
+
+#old_versions
+/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/old
+
 
 #exceptopion to the rule
 !/shallow-shotgun-analysis-workflow/results/.gitkeep
