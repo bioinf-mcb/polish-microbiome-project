@@ -14,3 +14,4 @@ shallow-shotgun-analysis-workflow/workflow/.snakemake/*
 
 #exceptopion to the rule
 !/shallow-shotgun-analysis-workflow/results/.gitkeep
+!/shallow-shotgun-analysis-workflow/resources/.gitkeep
