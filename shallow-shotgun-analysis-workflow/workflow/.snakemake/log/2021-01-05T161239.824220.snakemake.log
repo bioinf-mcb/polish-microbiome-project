@@ -1,4 +1,0 @@
-The flag 'directory' used in rule all is only valid for outputs, not inputs.
-SyntaxError:
-Not all output, log and benchmark files of rule fastp_se contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
-  File "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile", line 37, in <module>

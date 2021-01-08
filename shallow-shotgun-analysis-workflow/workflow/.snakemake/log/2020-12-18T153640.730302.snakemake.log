@@ -1,4 +1,0 @@
-The flag 'directory' used in rule all is only valid for outputs, not inputs.
-TypeError in line 22 of /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile:
-'function' object is not iterable
-  File "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile", line 22, in <module>

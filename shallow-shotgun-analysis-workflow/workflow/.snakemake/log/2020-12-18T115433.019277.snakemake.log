@@ -1,6 +1,0 @@
-The flag 'directory' used in rule all is only valid for outputs, not inputs.
-Building DAG of jobs...
-MissingInputException in line 51 of /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile:
-Missing input files for rule minimap2_index:
-QC_reads/ERR2242481_fastp.fastq
-QC_reads/ERR2242499_fastp.fastq

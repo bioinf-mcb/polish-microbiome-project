@@ -1,3 +1,0 @@
-WorkflowError in line 3 of /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile:
-Config file must be given as JSON or YAML with keys at top level.
-  File "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile", line 3, in <module>

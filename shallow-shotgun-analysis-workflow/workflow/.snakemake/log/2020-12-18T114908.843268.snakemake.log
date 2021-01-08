@@ -1,3 +1,0 @@
-WorkflowError in line 12 of /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile:
-Config file config.yaml not found.
-  File "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile", line 12, in <module>

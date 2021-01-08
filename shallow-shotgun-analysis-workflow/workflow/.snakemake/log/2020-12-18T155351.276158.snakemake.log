@@ -1,4 +1,0 @@
-The flag 'directory' used in rule all is only valid for outputs, not inputs.
-AttributeError in line 87 of /klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile:
-'Rules' object has no attribute 'fastp_se'
-  File "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/workflow/Snakefile", line 87, in <module>
