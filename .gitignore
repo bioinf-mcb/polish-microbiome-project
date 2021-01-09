@@ -1,3 +1,12 @@
 # General
 .gitignore
 **/__pycache__
+REDCAP/
+
+# Parsers module
+parsers/data/*
+parsers/.empty
+parsers/.vscode
+parsers/REDCAP
+parsers/ncbr_covid
+parsers/upload.csv

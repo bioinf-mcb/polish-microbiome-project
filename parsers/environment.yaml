@@ -1,8 +1,52 @@
-name: /app/parsers/ncbr_covid
+name: /app/ncbr_covid
 channels:
   - defaults
 dependencies:
+  - _libgcc_mutex=0.1=main
   - blas=1.0=openblas
+  - brotlipy=0.7.0=py38h27cfd23_1003
+  - ca-certificates=2020.12.8=h06a4308_0
+  - certifi=2020.12.5=py38h06a4308_0
+  - cffi=1.14.0=py38h2e261b9_0
+  - chardet=4.0.0=py38h06a4308_1003
+  - cryptography=3.3.1=py38h3c74f83_0
+  - html5lib=1.1=py_0
+  - icu=58.2=he6710b0_3
+  - idna=2.10=py_0
+  - ld_impl_linux-64=2.33.1=h53a641e_7
+  - libedit=3.1.20191231=h14c3975_1
+  - libffi=3.2.1=hf484d3e_1007
+  - libgcc-ng=9.1.0=hdf63c60_0
+  - libgfortran-ng=7.3.0=hdf63c60_0
+  - libopenblas=0.3.10=h5a2b251_0
+  - libstdcxx-ng=9.1.0=hdf63c60_0
+  - libxml2=2.9.10=hb55368b_3
+  - libxslt=1.1.34=hc22bd24_0
+  - lxml=4.6.2=py38h9120a33_0
+  - ncurses=6.2=he6710b0_1
   - nomkl=3.0=0
-prefix: /app/parsers/ncbr_covid
+  - numpy=1.19.2=py38h6163131_0
+  - numpy-base=1.19.2=py38h75fe3a5_0
+  - openssl=1.1.1i=h27cfd23_0
+  - pandas=1.2.0=py38ha9443f7_0
+  - pip=20.3.3=py38h06a4308_0
+  - pycparser=2.20=py_2
+  - pyopenssl=20.0.1=pyhd3eb1b0_1
+  - pysocks=1.7.1=py38h06a4308_0
+  - python=3.8.1=h0371630_1
+  - python-dateutil=2.8.1=py_0
+  - pytz=2020.5=pyhd3eb1b0_0
+  - readline=7.0=h7b6447c_5
+  - requests=2.25.1=pyhd3eb1b0_0
+  - setuptools=51.0.0=py38h06a4308_2
+  - six=1.15.0=py38h06a4308_0
+  - sqlite=3.33.0=h62c20be_0
+  - tk=8.6.10=hbc83047_0
+  - tzdata=2020d=h14c3975_0
+  - urllib3=1.26.2=pyhd3eb1b0_0
+  - webencodings=0.5.1=py38_1
+  - wheel=0.36.2=pyhd3eb1b0_0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7b6447c_3
+prefix: /app/ncbr_covid
 
