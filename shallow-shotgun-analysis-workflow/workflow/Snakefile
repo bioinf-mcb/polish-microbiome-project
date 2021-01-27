@@ -1,10 +1,10 @@
 
 
 #Load configuration dicts
-configfile: "config/sample.yml"
+configfile: "../config/samples.yml" #please change the path if your samples.yml file is saved under other directory   
 samples = config.copy()
 
-configfile: "config/config_template.yml"
+configfile: "../config/config_template.yml" #please change the path if your config.yml file is saved under other directory
 
 #Specify a working directory
 workdir: config['WORKDIR']
@@ -36,7 +36,7 @@ rule fastp_se:
         adapters = config['fastp']['adapter_fasta'],
         quality = config['fastp']['q'],
         unqualified = config['fastp']['u'],
-        extra = config['fastp']['extra']  #any additional params for fastp
+        extra = config['fastp']['fastp_extra']  #any additional params for fastp
     threads: config['THREADS']
     benchmark:
         "results/benchmarks/fastp/se/{sample}.tsv"
@@ -136,19 +136,19 @@ rule bowtie2:
     log:
         "results/logs/bowtie2/{sample}.log"
     params:
-        index = "results/bowtie2/index/idx",  # prefix of reference genome index (built with bowtie2-build)
+        index = "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/results/bowtie2/index/idx",  # prefix of reference genome index (built with bowtie2-build)
         np = config['bowtie2']['np'],
         mp = config['bowtie2']['mp'],
         rdg = config['bowtie2']['rdg'],
         rfg = config['bowtie2']['rfg'],
         score_min = config['bowtie2']['score_min'],
         k = config['bowtie2']['k'],
-        extra = "--met-file --reorder --very-sensitive --no-hd --no-unal -k 16"
+        extra = config['bowtie2']['bowtie2_extra']
     threads: config['THREADS']  # Use at least two threads
     benchmark:
         "results/benchmarks/bowtie2/mapped/{sample}.tsv"
     shell:
-        "bowtie2 {params.extra} -x {params.index} -U {input} -S {output} -p {threads} "
+        "bowtie2 {params.extra} -x {params.index} -U {input.sample} -S {output} -p {threads} "
         "--np {params.np} --mp {params.mp} --rdg {params.rdg} --rfg {params.rfg} "
         "--score-min {params.score_min} -k {params.k}"
 
@@ -161,7 +161,7 @@ rule woltka_gotu:
         "results/logs/woltka/gotu.log"
      params:
         basename="results/bowtie2/mapped",
-        extra= ""
+        extra= config['woltka_gotu_extra']
      benchmark:
         "results/benchmarks/woltka/gotu.tsv"
      shell:
@@ -176,9 +176,9 @@ rule woltka_classify:
         "results/logs/woltka/classify.log"
      params:
         basename = "results/bowtie2/mapped",
-        rank = "genus,species",   # if you specify only one rank it will throw output error
-        hierarchy="--map ../../prebuilt_data/taxids.txt --nodes ../../prebuilt_data/nodes.dmp --names ../../prebuilt_data/names.dmp",
-        extra = ""
+        rank = config['woltka_classify']['rank'],   # if you specify only one rank it will throw output error
+        hierarchy= config['woltka_classify']['hierarchy'],
+        extra = config['woltka_classify']['woltka_classify_extra']
      benchmark:
         "results/benchmarks/woltka/classify.tsv"
      shell:

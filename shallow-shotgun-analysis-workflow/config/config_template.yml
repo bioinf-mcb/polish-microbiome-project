@@ -1,11 +1,10 @@
 #input definitions
-WORKDIR: "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow"
+WORKDIR: '' #fill in path to a working directory where all results will be written
 
-
-#referenece genome for minimap2_index
-ref_hum_gen: './../../prebuilt_data/GCA_000001405.15_GRCh38_genomic.fna.gz' 
+#referenece genome (contamination) for minimap2_index
+ref_hum_gen: '' #path to refernce genome file
 #referenece genome for bowtie2_index
-ref_bac_gen: './../../prebuilt_data/rep82.fna'
+ref_bac_gen: '' #path to refernce genome file
 
 
 # compute on N thread
@@ -15,13 +14,13 @@ THREADS: 8
 #FASTP
 ##########
 fastp:
-    adapter_fasta: './../../prebuilt_data/adapters.fasta' #a FASTA file to trim both read1 and read2
+    adapter_fasta: '' # FASTA file to trim both read1 and read2
     q: 15 #the quality value that a base is qualified
     u: 40 #how many percents of bases are allowed to be unqualified
             #extra params for fastp
             # -y -  enable low complexity filter
             # -p -  enable overrepresented sequence analysis
-    extra: '-y -p' #extra parameters
+    fastp_extra: '-y -p' #extra parameters
 
 ##########
 #MULTIQC
@@ -59,12 +58,19 @@ bowtie2:
     #--very-sensitive - Preset parameters. Same as: -D 20 -R 3 -N 0 -L 20 -i S,1,0.50
     #--no-hd - Suppress SAM header lines (starting with @).
     #--no-unal - Suppress SAM records for reads that failed to align.
-    extra: '--met-file --reorder --very-sensitive --no-hd --no-unal'
+    bowtie2_extra: '--met-file --reorder --very-sensitive --no-hd --no-unal' #add or remove extra arguments
 
 ##########
 #WOLTKA_GOTU
 ##########
 woltka_gotu_extra: ''  #extra parameters
 
+##########
+#WOLTKA_CLASSIFY
+##########
+woltka_classify:
+    rank: '', # ranks for taxonomic profiling for example 'genus,species'
+    hierarchy: '' #any hierarchy files, needs to be pased with appropriate flag accordingly to woltka documentation 
+    woltka_classify_extra: = '' #any other parameters
 
 
