@@ -1,5 +1,0 @@
-# Configuration file with the sample names
-
-samples:
-    ERR2242499: ../../raw_fastqs/ERR2242499.fastq.gz 
-    ERR2242481: ../../raw_fastqs/ERR2242481.fastq.gz
