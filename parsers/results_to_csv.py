@@ -2,7 +2,7 @@
 import pandas as pd
 from collections import defaultdict
 
-def parse_to_csv(lab_tests, patient_name) -> pd.DataFrame:
+def parse_to_csv(lab_tests, patient_id) -> pd.DataFrame:
     # lab_tests, patient_name = XLSParser.parse("data/pacjent nr 1 excel.xls")
 
     results = defaultdict(list)
@@ -14,7 +14,7 @@ def parse_to_csv(lab_tests, patient_name) -> pd.DataFrame:
         if '-' not in row['Data wyk.']:
             continue
 
-        results['patient_id'].append(1)
+        results['patient_id'].append(patient_id)
         results['redcap_repeat_instrument'].append("lab_result")
         results['redcap_repeat_instance'].append(idx+1)
         results['patient_name'].append('')
@@ -37,10 +37,10 @@ def parse_to_csv(lab_tests, patient_name) -> pd.DataFrame:
         results['unit'].append(row['Jedn.'])
         results['lab_result_complete'].append(1)
 
-    results['patient_id'].append(1)
+    results['patient_id'].append(patient_id)
     results['redcap_repeat_instrument'].append('')
     results['redcap_repeat_instance'].append('')
-    results['patient_name'].append(patient_name.title())
+    results['patient_name'].append('')
     results['patient_info_complete'].append(1)
 
     results['profile'].append('')
@@ -54,11 +54,11 @@ def parse_to_csv(lab_tests, patient_name) -> pd.DataFrame:
     results['lab_result_complete'].append('')
     return pd.DataFrame(results)
 
-
+#%%
 if __name__ == "__main__":
     from xls_parser import XLSParser
-    from rtf_parser import RTFParser
+    # from rtf_parser import RTFParser
 
     tests, name = XLSParser.parse("data/pacjent nr 1 excel.xls")
-    results = parse_to_csv()
+    results = parse_to_csv(tests, 1)
     results.to_csv("upload.csv", index=False)
