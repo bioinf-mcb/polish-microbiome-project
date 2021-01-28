@@ -1,6 +1,25 @@
 # General
 .gitignore
 **/__pycache__
+
+
+#Snakemake results
+/shallow-shotgun-analysis-workflow/results/config/config.yml
+/shallow-shotgun-analysis-workflow/results/config/samples.yml
+#exclude everything
+/shallow-shotgun-analysis-workflow/results/*
+/shallow-shotgun-analysis-workflow/resources/*
+shallow-shotgun-analysis-workflow/workflow/.snakemake/*
+.snakemake
+
+#old_versions
+/shallow-shotgun-analysis-workflow/workflow/old
+
+#exceptopion to the rule
+!/shallow-shotgun-analysis-workflow/results/.gitkeep
+!/shallow-shotgun-analysis-workflow/resources/.gitkeep
+!/shallow-shotgun-analysis-workflow/resources/images/step1-dag.png
+
 REDCAP/
 
 # Parsers module
@@ -10,3 +29,4 @@ parsers/.vscode
 parsers/REDCAP
 parsers/ncbr_covid
 parsers/upload.csv
+
