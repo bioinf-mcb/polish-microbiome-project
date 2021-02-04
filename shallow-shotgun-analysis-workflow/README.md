@@ -1,6 +1,6 @@
 # Shallow shotgun analysis pipeline
 
-This is a bioinformatics shallow shotgun analysis pypeline intended for use with single-end metagenomic data sequenced at around 500 000 reads per sample depth. It can be used for other shotgun data as well by modifying congiguration file. 
+This is a bioinformatics shallow shotgun analysis pipeline intended for use with single-end metagenomic data sequenced at around 500 000 reads per sample depth. It can be used for other shotgun data as well by modifying configuration file. 
 
 In the final step of this workflow BIOM tables are generated in [woltka](https://github.com/qiyunzhu/woltka) - a classifiaction tool -, which is preceded by quality control and adapter trimming (fastp), contamination removal (minimap2) and alignemnt to refernece genomes (bowtie2). This step is implemented in Snakemake workflow management system. More details [here](#workflow-execution).
 
@@ -40,9 +40,9 @@ The scheme of the snakemake workflow for a single sample (not a DAG!!):
 
 ### Snakemake environment setup
 
-The setup is based on creation of conda environment. Make sure you have [anaconda](https://www.anaconda.com/) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) installed. 
+The setup is based on creation of a conda environment. Make sure you have [anaconda](https://www.anaconda.com/) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) installed. 
 
-Create a conda environment with all dependencies (metagenomic analysis tools) used in snakemake rules workflow and snakemake dependencies itself. To do this execute the below command from `polish-gut-microbiome/`:
+Create the conda environment with all dependencies (metagenomic analysis tools) used in Snakemake rules workflow and snakemake dependencies itself. To do this execute the below command from `polish-gut-microbiome/`:
 
 ~~~bash
 conda env create -n shallow-snakemake -f shallow-shotgun-analysis-workflow/workflow/envs/environment.yml
@@ -107,7 +107,7 @@ configfile: "../config/config_template.yml" #please change the path if your conf
 
 ### Execution
 
-If you hahe done the configuration properly you should be able to execute the `Snakefile` from its directory.
+If you have done the configuration properly you should be able to execute the `Snakefile` from its directory.
 
 Dry-run:
 
@@ -227,7 +227,7 @@ Params from SHOGUN:
 
 In this rule gOTU analysis (gOTU is analogous to sOTU in 16S rRNA studies).
 
-Returns a BIOM table tahn can be processed in QIIME 2 according to this [instructions](https://github.com/qiyunzhu/woltka/blob/master/doc/gotu.md).
+Returns a BIOM table that can be processed in QIIME 2 according to this [instructions](https://github.com/qiyunzhu/woltka/blob/master/doc/gotu.md).
 
 
 
