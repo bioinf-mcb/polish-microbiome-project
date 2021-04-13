@@ -1,0 +1,185 @@
+
+
+#Load configuration dicts
+configfile: "../config/samples.yml" #please change the path if your samples.yml file is saved under other directory   
+samples = config.copy()
+
+configfile: "../config/config_template.yml" #please change the path if your config.yml file is saved under other directory
+
+#Specify a working directory
+workdir: config['WORKDIR']
+
+
+#RULES
+
+rule all: 
+    input:
+        directory("results/multiqc"),
+        "results/woltka/gotu/table.biom",
+        directory("results/woltka/classify")
+
+def get_sample(wildcards):
+    """Get the sample name inferred from the wildcards"""
+    return samples["samples"][wildcards.sample]
+
+rule fastp_se:
+    input: 
+        [get_sample]   
+    output:
+        reads = "results/QC_reads/{sample}_fastp.fastq",
+        failed = "results/QC_reads/failed/{sample}_failed.fastq",
+        json = "results/QC_reads/report/{sample}_fastp.json",
+        html = "results/QC_reads/report/{sample}.html"
+    log:
+        "results/logs/fastp/se/{sample}.log"
+    params:
+        adapters = config['fastp']['adapter_fasta'],
+        quality = config['fastp']['q'],
+        unqualified = config['fastp']['u'],
+        extra = config['fastp']['fastp_extra']  #any additional params for fastp
+    threads: config['THREADS']
+    benchmark:
+        "results/benchmarks/fastp/se/{sample}.tsv"
+    shell:
+        "fastp -i {input} -o {output.reads} " 
+        "--failed_out {output.failed} -q {params.quality} -u {params.unqualified} " 
+        "--adapter_fasta {params.adapters} {params.extra} -j {output.json} " 
+        "-h {output.html} -w {threads}"
+
+rule multiqc:   
+    input:
+        expand("results/QC_reads/report/{sample}_fastp.json", sample=samples['samples'])
+    output:
+        directory("results/multiqc/")
+    params:
+        extra = config['multiqc_extra']  # Optional: extra parameters 
+    log:
+        "results/logs/multiqc.log"
+    shell:
+        "multiqc {input} -o {output} {params.extra}"
+
+rule minimap2_index: 
+    input:
+        ref_hum_gen = config['ref_hum_gen'], #reference human genome
+        dependancy = expand("results/QC_reads/{sample}_fastp.fastq", sample=samples['samples'])
+    output:
+        "results/minimap2/index/GRCh38.mmi"
+    log:
+        "results/logs/minimap2/index/GRCh38.mmi.log"
+    params:
+        extra = config['minimap2_index_extra']   # optional additional args
+    threads: config['THREADS']
+    benchmark:
+        "results/benchmarks/minimap/index/GRCh38.mmi.tsv"
+    shell:
+        "minimap2 -t {threads} -d {output} {input} {params.extra}"
+
+rule minimap2:   
+    input:
+        reads = rules.fastp_se.output.reads,
+        index = rules.minimap2_index.output
+    output:
+        "results/minimap2/{sample}.sam"
+    log:
+        "results/logs/minimap2/mapped/{sample}.log"
+    params:
+        extra= config['minimap2_extra']   # optional additional args
+    threads: config['THREADS']
+    benchmark:
+        "results/benchmarks/minimap/mapped/{sample}.tsv"
+    shell:
+        "minimap2 {input.index} {input.reads} -t {threads} {params.extra} > {output}"
+
+rule samtools_decontaminated:   # from minimap2 mapping extract only non-human reads
+    input:
+        rules.minimap2.output
+    output:
+        "results/samtools_decontaminated/{sample}_decontaminated.fastq.gz"
+    log:
+        "results/logs/samtools/{sample}.log"
+    benchmark:
+        "results/benchmarks/samtools/{sample}.tsv"
+    shell:
+        "samtools view -buSh -f 4 {input} | samtools fastq - | pigz -9 -c - > {output}"
+
+rule bowtie2_build:
+    input:
+        ref_bac_gen = config['ref_bac_gen'],
+        dependancy = expand("results/samtools_decontaminated/{sample}_decontaminated.fastq.gz", sample=samples['samples'])
+    output:
+        multiext(
+            "results/bowtie2/index/idx",
+            ".1.bt2l", ".2.bt2l", ".3.bt2l", ".4.bt2l", ".rev.1.bt2l", ".rev.2.bt2l",
+        ),
+    log:
+        ["results/logs/bowtie2/index/idx{bt2l}.log".format(bt2l=bt2l) for bt2l in [".1.bt2l", ".2.bt2l", ".3.bt2l", 
+         ".4.bt2l", ".rev.1.bt2l", ".rev.2.bt2l"]]
+    params:
+        basename = "results/bowtie2/index/idx",
+        extra = config['bowtie2_index_extra']
+#    benchmark:
+#        ["results/benchmarks/bowtie2/index/idx{bt2l}.log".format(bt2l=bt2l) for bt2l in [".1.bt2l", ".2.bt2l", ".3.bt2l", 
+#         ".4.bt2l", ".rev.1.bt2l", ".rev.2.bt2l"]]
+    threads: config['THREADS']   
+    shell:
+        "bowtie2-build {input.ref_bac_gen} {params.basename} -t {threads} {params.extra}"
+
+rule bowtie2:  
+    input:	
+        sample=rules.samtools_decontaminated.output,
+        dependancy = multiext(
+            "results/bowtie2/index/idx",
+            ".1.bt2l", ".2.bt2l", ".3.bt2l", ".4.bt2l", ".rev.1.bt2l", ".rev.2.bt2l",
+        ),
+    output:
+        "results/bowtie2/mapped/{sample}_aligned.sam"
+    log:
+        "results/logs/bowtie2/{sample}.log"
+    params:
+        index = "/klaster/scratch/kkopera/COVID/microbiome/snakemake/QC_and_FT_advanced/polish-microbiome-project/shallow-shotgun-analysis-workflow/results/bowtie2/index/idx",  # prefix of reference genome index (built with bowtie2-build)
+        np = config['bowtie2']['np'],
+        mp = config['bowtie2']['mp'],
+        rdg = config['bowtie2']['rdg'],
+        rfg = config['bowtie2']['rfg'],
+        score_min = config['bowtie2']['score_min'],
+        k = config['bowtie2']['k'],
+        extra = config['bowtie2']['bowtie2_extra']
+    threads: config['THREADS']  # Use at least two threads
+    benchmark:
+        "results/benchmarks/bowtie2/mapped/{sample}.tsv"
+    shell:
+        "bowtie2 {params.extra} -x {params.index} -U {input.sample} -S {output} -p {threads} "
+        "--np {params.np} --mp {params.mp} --rdg {params.rdg} --rfg {params.rfg} "
+        "--score-min {params.score_min} -k {params.k}"
+
+rule woltka_gotu:  
+     input:
+        expand("results/bowtie2/mapped/{sample}_aligned.sam", sample=samples['samples'])
+     output:
+       "results/woltka/gotu/table.biom"
+     log:
+        "results/logs/woltka/gotu.log"
+     params:
+        basename="results/bowtie2/mapped",
+        extra= config['woltka_gotu_extra']
+     benchmark:
+        "results/benchmarks/woltka/gotu.tsv"
+     shell:
+        "woltka gotu -i {params.basename} -o {output} {params.extra}"
+
+rule woltka_classify: 
+     input:
+        expand("results/bowtie2/mapped/{sample}_aligned.sam", sample=samples['samples'])
+     output:
+        directory("results/woltka/classify")
+     log:
+        "results/logs/woltka/classify.log"
+     params:
+        basename = "results/bowtie2/mapped",
+        rank = config['woltka_classify']['rank'],   # if you specify only one rank it will throw output error
+        hierarchy= config['woltka_classify']['hierarchy'],
+        extra = config['woltka_classify']['woltka_classify_extra']
+     benchmark:
+        "results/benchmarks/woltka/classify.tsv"
+     shell:
+        "woltka classify -i {params.basename} --rank {params.rank} {params.hierarchy} {params.extra} -o {output}"
