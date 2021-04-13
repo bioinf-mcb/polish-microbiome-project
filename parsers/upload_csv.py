@@ -1,11 +1,15 @@
 #%%
+import json
 import requests
 import pandas as pd
+
+with open("db_pass.json", "r") as f:
+    token = json.load(f)['token']
 
 #%%
 def upload(dataframe):
     data = {
-        'token': 'A65197E9E9857DFA5A15F6DD03E5E6F1',
+        'token': token,
         'content': 'record',
         'format': 'csv',
         'type': 'flat',

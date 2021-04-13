@@ -1,6 +1,7 @@
 #%%
 import pandas as pd
 from collections import defaultdict
+import datetime
 
 #%%
 # data = pd.read_html("data/pacjent nr 1 excel.xls")[0]
@@ -31,6 +32,21 @@ class XLSParser:
 
     @staticmethod
     def parse(fname):
+        def fix_excel_date_conversion(date):
+            # The date can be misinterpreted in two ways:
+            # a) 12.39 -> {month}.{year} -> 01.12.1939
+            # b) 2.7 -> {day}.{month} -> 02.07.[current year]
+            res = date["Wartość"]
+            if type(res) is datetime.datetime:
+                # a)
+                if res.year != datetime.datetime.now().year and res.day == 1:
+                    res = float(f"{res.month}.{str(res.year)[-2:]}")
+                # b)
+                else:
+                    res = float(f"{res.day}.{res.month}")
+                print(date["Data wyk."], date["Wynik"], res)
+            return res
+
         def _parse_covid_res(filtered):
             try:
                 result = filtered[filtered['Wynik']=='Wynik badania']
@@ -51,11 +67,18 @@ class XLSParser:
             
             return answer, result
 
-        data = pd.read_html(fname)[0]
-        name = data.columns[0][0]
-        data.columns = data.columns.droplevel().droplevel()
+        try:
+            data = pd.read_html(fname)[0]
+            # name = data.columns[0][0]
+            data.columns = data.columns.droplevel().droplevel()
+        except ValueError:
+            data = pd.ExcelFile(fname).parse(0)
+            data.columns = data.iloc[9]
+            data = data.drop(9, axis=0)
+            data = data.dropna()
+            # data["Wartość"] = data.apply(fix_excel_date_conversion, axis=1)
+
         data = data.dropna()
-        
         covid_test = data[data['Profil'] == 'Koronawirus SARS-CoV-2']
         unique_orders = covid_test['Nr zlecenia'].unique()
 
@@ -92,9 +115,9 @@ class XLSParser:
 
         data = data[data["Nr zlecenia"].apply(lambda x: x not in unique_orders)]
         data = data.append(pd.DataFrame.from_dict(covid_results, orient='columns'), ignore_index=True).reset_index(drop=True)
-        return data, name
+        return data
 
 # %%
 if __name__ == "__main__":
-    data, _ = XLSParser.parse("data/pacjent nr 10.xls")
-    data
+    data = XLSParser.parse("data/Pacjenci 70-100 XLS/Pacjent numer 85.xls")
+    print(data)

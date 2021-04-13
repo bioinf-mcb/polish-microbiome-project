@@ -10,3 +10,14 @@ parsers/.vscode
 parsers/REDCAP
 parsers/ncbr_covid
 parsers/upload.csv
+parsers/db_pass.json
+parsers/processed.csv
+
+# Additional modules
+FTP_DATA/
+ILLUMINA_CLIENT/
+data/
+notebooks/
+
+# Analysis
+notebooks/lab_result_analysis/config.json

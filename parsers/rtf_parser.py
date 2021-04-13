@@ -131,8 +131,10 @@ class RTFParser:
         with open(fname, "r", encoding='iso-8859-15') as f:
             data = f.read()
 
-        data = striprtf.rtf_to_text(data).split("\n")
-
+        data = striprtf.rtf_to_text(data)
+        data = re.sub("<[^>]+>", "", data)
+        data = data.split("\n")
+        print(data)
         epicrysis_found = False
         epicrisis = []
         for line in data:
@@ -171,8 +173,12 @@ class RTFParser:
         # sars = " ".join(sars)
         return sars
 
-# %%
-RTFParser.parse_epicrysis("data/pacjent nr 1.rtf")
+# # %%
+# RTFParser.parse_epicrysis("data/pacjent nr 1.rtf")
 
 #%%
-RTFParser.parse_covid("data/pacjent nr 1.rtf")
+# RTFParser.parse_covid("data/pacjent nr 1.rtf")
+# %%
+
+if __name__=="__main__":
+    print(RTFParser.parse_epicrysis("data/content.xml"))
