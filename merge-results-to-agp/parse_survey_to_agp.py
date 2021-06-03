@@ -174,9 +174,31 @@ mapping = {
     "antibiotic_history": ["antibiotics_before_hospital", map_numerical(["Week", "Week", "Month", "6 months", "6 months", "Year", "I have not taken antibiotics in the past year."], "Unspecified")],
     "subset_antibiotic_history": ["antibiotics_before_hospital", map_numerical(["No"]*6 + ["Yes"], "Unspecified")],
     "allergic_to_i_have_no_food_allergies_that_i_know_of": ["allergies", map_numerical(["No", "Yes", "No"], "Unspecified")], #FINISH ALLERGIES LATER
-    "allergic_to_other": ["allergic_to___11", map_numerical(["No", "Yes"], offset=0)],
+    "allergic_to_other": ["allergic_to___4", map_numerical(["No", "Yes"], offset=0)],
+    "allergic_to_peanuts": ["allergic_to___1", map_numerical(["No", "Yes"], offset=0)],
+    "allergic_to_tree_nuts": ["allergic_to___2", map_numerical(["No", "Yes"], offset=0)],
+    "allergic_to_shellfish": ["allergic_to___3", map_numerical(["No", "Yes"], offset=0)],
+    "allergic_to_unspecified": ["allergies", map_numerical(["No", "No", "No"], nan_value="Yes")],
     "exercise_frequency": ["exercise_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
-    "diet_type": 
+    "seasonal_allergies": ["seasonal_allergies", map_numerical(["Yes", "No"])],
+    "non_food_allergies_beestings": ["non_food_allergies___3", map_numerical(["No", "Yes"], offset=0)],
+    "non_food_allergies_drug_eg_penicillin": ["non_food_allergies___1", map_numerical(["No", "Yes"], offset=0)],
+    "non_food_allergies_pet_dander": ["non_food_allergies___2", map_numerical(["No", "Yes"], offset=0)],
+    "non_food_allergies_poison_ivyoak": ["non_food_allergies___5", map_numerical(["No", "Yes"], offset=0)],
+    "non_food_allergies_sun": ["non_food_allergies___6", map_numerical(["No", "Yes"], offset=0)],
+    "non_food_allergies_unspecified": ["allergies", map_numerical(["No", "No", "No"], nan_value="Yes")],
+    "diet_type": ["diet_type", map_numerical(["Omnivore", "Omnivore but do not eat red meat", "Vegan", "Vegetarian", "Vegetarian but eat seafood"], "Unspecified")],
+    "lactose": ["lactose", map_numerical(["Yes", "No"], "Unspecified")],
+    "gluten": ["gluten", map_numerical([ "I was diagnosed with celiac disease", "I was diagnosed with gluten allergy (anti-gluten IgG), but not celiac disease", "No"])],
+    "fruit_frequency": ["fruit_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
+    "vegetable_frequency": ["vegetable_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
+    "red_meat_frequency": ["red_meat_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
+    "fermented_plant_frequency": ["fermented_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
+    "sugar_sweetened_drink_frequency": ["sugar_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
+    "sugary_sweets_frequency": ["sugar_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
+    "artificial_sweeteners": ["artificial_sweeteners", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
+    # "other_supplement_frequency": ["supplementation_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)"], "Never")],
+    #TODO: Finish supplements
 }
 
 # %%
@@ -191,12 +213,12 @@ for col, mode in mapping.items():
 
 
 # %%
-data.columns[60:80]
+data.columns[80:100]
 
 #%%
 data[[i for i in data.columns if "allergic_to" in i]]
 
 # %%
-template[["exercise_frequency"]]
+data[["diet_type", "allergies"]]
 
 # %%
