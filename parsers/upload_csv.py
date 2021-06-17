@@ -3,11 +3,11 @@ import json
 import requests
 import pandas as pd
 
-with open("db_pass.json", "r") as f:
+with open("../db_pass", "r") as f:
     token = json.load(f)['token']
 
 #%%
-def upload(dataframe):
+def upload(client, dataframe):
     data = {
         'token': token,
         'content': 'record',
@@ -21,8 +21,9 @@ def upload(dataframe):
     }
 
     data['data'] = dataframe.to_csv(index=False).strip()
-    r = requests.post('http://argon.mcb.uj.edu.pl:7000/api/',data=data)
-    print('HTTP Status: ' + str(r.status_code))
+    r = requests.post(f'{client}/api/',data=data)
+    # print('HTTP Status: ' + str(r.status_code))
+    assert r.status_code==200
 
 
 if __name__ == "__main__":

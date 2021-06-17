@@ -1,4 +1,5 @@
 from xls_parser import XLSParser
+from rtf_parser import RTFParser
 from lxml.etree import XMLSyntaxError
 from results_to_csv import parse_to_csv
 from upload_csv import upload
@@ -58,24 +59,33 @@ def fix_dates(df, xml):
 
 def process(fname):
     patient_id = re.findall(".*(?:numer)?(?:nr)? (\d*).*", fname)[0]
-    print(fname, patient_id)
 
-    lab_tests = XLSParser.parse(fname)
-    odt_name = fname.replace("XLS", "ODT").replace("xls", "odt")
-    with zipfile.ZipFile(odt_name, 'r') as zip_ref:
-        xml = zip_ref.read("content.xml").decode("utf-8")
-    
-    lab_tests = fix_dates(lab_tests, xml)
+    try:
+        lab_tests = XLSParser.parse(fname)
+        odt_name = fname.replace("Wyniki badań XLS", "Karty pobytu")
+        odt_name = odt_name.replace("XLS", "ODT").replace("xls", "odt")
+        with zipfile.ZipFile(odt_name, 'r') as zip_ref:
+            xml = zip_ref.read("content.xml").decode("utf-8")
+        lab_tests = fix_dates(lab_tests, xml)
+    except FileNotFoundError:
+        rtf_name = fname.replace("Wyniki badań XLS", "Karty pobytu")
+        rtf_name = rtf_name.replace("XLS", "RTF").replace("xls", "rtf")
+        lab_tests = RTFParser.parse(rtf_name)
+        # print(lab_tests)
+        
 
     df = parse_to_csv(lab_tests, patient_id)
     df.to_csv("processed.csv", index=False)
-    upload(df)
+    upload('http://localhost', df)
 
-for fname in glob.glob("data/Pacjenci 70-100 XLS/*.xls"):
-    try:
+if __name__=="__main__":
+    for fname in glob.glob("/storage/PawelLab/wwydmanski/NCBR-COVID/FTP_DATA/data/upload/pacjenci 201-250/*/*.xls"):
         try:
-            process(fname)
-        except (ValueError, FileNotFoundError):
-            continue
-    except XMLSyntaxError as e:
-        print("File corrupted!")
+            try:
+                print(fname)
+                process(fname)
+            except (ValueError, FileNotFoundError) as e:
+                raise e
+                continue
+        except XMLSyntaxError as e:
+            print("File corrupted!")

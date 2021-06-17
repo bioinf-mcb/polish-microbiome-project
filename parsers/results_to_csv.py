@@ -17,8 +17,8 @@ def parse_to_csv(lab_tests, patient_id) -> pd.DataFrame:
         results['patient_id'].append(patient_id)
         results['redcap_repeat_instrument'].append("lab_result")
         results['redcap_repeat_instance'].append(idx+1)
-        results['patient_name'].append('')
-        results['patient_info_complete'].append('')
+        # results['patient_name'].append('')
+        # results['patient_info_complete'].append('')
 
         results['profile'].append(row['Profil'])
         results['date_of_test'].append(row['Data wyk.'].split()[0])
@@ -31,7 +31,7 @@ def parse_to_csv(lab_tests, patient_id) -> pd.DataFrame:
             test_norm[0] = 0
         elif test_norm[0] == '-':
             test_norm = ['-', '-']
-
+        
         results['norm_lower'].append(test_norm[0])
         results['norm_upper'].append(test_norm[1])
         results['unit'].append(row['Jedn.'])
@@ -40,8 +40,8 @@ def parse_to_csv(lab_tests, patient_id) -> pd.DataFrame:
     results['patient_id'].append(patient_id)
     results['redcap_repeat_instrument'].append('')
     results['redcap_repeat_instance'].append('')
-    results['patient_name'].append('')
-    results['patient_info_complete'].append(1)
+    # results['patient_name'].append('')
+    # results['patient_info_complete'].append(1)
 
     results['profile'].append('')
     results['date_of_test'].append('')

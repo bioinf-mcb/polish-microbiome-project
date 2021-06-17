@@ -132,6 +132,20 @@ def get_cancer_treatment(row):
         return "No treatment"
     return "Unspecified"
 
+def get_contraceptives(row):
+    if row["contraceptives"]==2:
+        return "No"
+    elif row["contraceptives"]==0:
+        return "Not applicable"
+    
+    wrap = map_numerical(['Yes, I am taking the "pill"', 
+                            'Yes, I use a contraceptive patch (Ortho-Evra)', 
+                            'Yes, I use a hormonal IUD (Mirena)', 
+                            'Yes, I use the NuvaRing',
+                            'Yes, I use an injected contraceptive (DMPA)',
+                            'Yes, I use an injected contraceptive (DMPA)'], offset=0)
+    return wrap(row["contraceptive_type"])
+
 lat_lon_parser = LatLonParser()
 
 mapping = {
@@ -197,8 +211,8 @@ mapping = {
     "sugar_sweetened_drink_frequency": ["sugar_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
     "sugary_sweets_frequency": ["sugar_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
     "artificial_sweeteners": ["artificial_sweeteners", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)", "Never"], "Unspecified")],
-    # "other_supplement_frequency": ["supplementation_frequency", map_numerical(["Daily", "Regularly (3-5 times/week)", "Occasionally (1-2 times/week)", "Rarely (a few times/month)"], "Never")],
     #TODO: Finish supplements
+    "contraceptive": get_contraceptives,
 }
 
 # %%
@@ -213,7 +227,7 @@ for col, mode in mapping.items():
 
 
 # %%
-data.columns[80:100]
+data.columns[60:80]
 
 #%%
 data[[i for i in data.columns if "allergic_to" in i]]
@@ -221,4 +235,6 @@ data[[i for i in data.columns if "allergic_to" in i]]
 # %%
 data[["diet_type", "allergies"]]
 
+# %%
+template.to_csv("template_filled.csv")
 # %%

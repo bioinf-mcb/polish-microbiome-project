@@ -31,6 +31,18 @@ class XLSParser:
         return res >= norm[0] and res<=norm[1]
 
     @staticmethod
+    def open_file(fname):
+        try:
+            data = pd.read_html(fname)[0]
+            data.columns = data.columns.droplevel().droplevel()
+        except ValueError:
+            data = pd.ExcelFile(fname).parse(0)
+            data.columns = data.iloc[9]
+            data = data.drop(9, axis=0)
+            # data = data.dropna()
+        return data
+
+    @staticmethod
     def parse(fname):
         def fix_excel_date_conversion(date):
             # The date can be misinterpreted in two ways:
@@ -52,7 +64,11 @@ class XLSParser:
                 result = filtered[filtered['Wynik']=='Wynik badania']
                 answer = result['Wartość'].values[0]
             except IndexError as e:
-                result = filtered[filtered['Wynik']=='Wykrywanie materiału genetyczneg']
+                for potential_descr in ['Wykrywanie materiału genetyczneg', 'Materiał genetyczny SARS CoV-2']:
+                    result = filtered[filtered['Wynik']==potential_descr]
+                    if len(result) > 0:
+                        break
+                    
                 answer = result['Wartość'].values[0]
                 if "nie wykryto" in answer.lower():
                     answer = 'ujemny'

@@ -5,21 +5,21 @@ import re
 from collections import defaultdict
 import pandas as pd
 
-#%%
-ENCODING_TABLE = [
-    ("³", "ł"),
-    ("ê", "ę"),
-    ("¹", "ą"),
-    ("¿", "ż"),
-    ("\x9c", "ś"),
-    ("cæ", "ć")
-]
+# #%%
+# ENCODING_TABLE = [
+#     ("³", "ł"),
+#     ("ê", "ę"),
+#     ("¹", "ą"),
+#     ("¿", "ż"),
+#     ("\x9c", "ś"),
+#     ("cæ", "ć")
+# ]
 
-#%%
-with open("data/pacjent nr 1.rtf", "r", encoding='iso-8859-15') as f:
-    data = f.read()
+# #%%
+# with open("data/pacjent nr 1.rtf", "r", encoding='iso-8859-15') as f:
+#     data = f.read()
 
-data = striprtf.rtf_to_text(data).split("\n")
+# data = striprtf.rtf_to_text(data).split("\n")
 
 # %%
 class Parser:
@@ -45,6 +45,8 @@ class Parser:
             self.epicrisis.append(line)
         if 'Epikryza' in line:
             self.parsing_mode = "EPICRISIS"
+        if "ANTYBIOGRAM" in line:
+            self.parsing_mode = "ANTYBIOGRAM"
 
         if self.parsing_mode == "REGULAR":
             if '|' not in line:
@@ -85,9 +87,14 @@ class Parser:
                 test_norm = re.findall("\([^\)]*\)", test)
                 if len(test_norm) > 0:
                     test_norm = test_norm[0]
-                    test_norm = test_norm.rstrip(")").lstrip("(").split(" - ")
-                    if test_norm[0] == '':
-                        test_norm[0] = 0
+                    parsed_test_norm = test_norm.rstrip(")").lstrip("(").split(" - ")
+                    if parsed_test_norm[0] == '':
+                        parsed_test_norm[0] = 0
+                    if len(parsed_test_norm) == 1:
+                        parsed_test_norm.append(parsed_test_norm[0])
+                        test_norm = f"({parsed_test_norm[0]} - {parsed_test_norm[0]})"
+                else:
+                    test_norm = '(0 - 0)'
 
                 value = test.split(" : ")[1].split(" ")[0]
                 unit = test.split(" : ")[1].split(" ")[-1]
@@ -97,19 +104,21 @@ class Parser:
                 raise e
 
             test_res = {}
-            test_res["Date"] = self.date
-            test_res["Test name"] = test_name
-            test_res["Value"] = value
-            test_res["Norm"] = test_norm
-            test_res["Unit"] = unit
+            test_res["Data wyk."] = self.date
+            test_res["Profil"] = test_name
+            test_res["Wartość"] = value
+            test_res["Norma"] = test_norm
+            test_res["Jedn."] = unit
+            test_res["Wynik"] = test_name
+            test_res["Nr zlecenia"] = ''
             self.results.append(test_res)
-#%%
-parser = Parser()
-for line in data:
-    line = line.strip()
-    parser.parse_line(line)
+# #%%
+# parser = Parser()
+# for line in data:
+#     line = line.strip()
+#     parser.parse_line(line)
 
-df = pd.DataFrame.from_dict(parser.results)
+# df = pd.DataFrame.from_dict(parser.results)
 
 #%%
 class RTFParser:
@@ -132,9 +141,8 @@ class RTFParser:
             data = f.read()
 
         data = striprtf.rtf_to_text(data)
-        data = re.sub("<[^>]+>", "", data)
+        # data = re.sub("<[^>]+>", "", data)
         data = data.split("\n")
-        print(data)
         epicrysis_found = False
         epicrisis = []
         for line in data:
@@ -172,6 +180,19 @@ class RTFParser:
 
         # sars = " ".join(sars)
         return sars
+
+    @staticmethod
+    def parse(fname):
+        parser = Parser()
+        with open(fname, "r", encoding='iso-8859-15') as f:
+            data = f.read()
+        data = striprtf.rtf_to_text(data).split("\n")
+
+        for line in data:
+            parser.parse_line(line)
+
+        return pd.DataFrame.from_dict(parser.results)
+
 
 # # %%
 # RTFParser.parse_epicrysis("data/pacjent nr 1.rtf")
