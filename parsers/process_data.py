@@ -1,13 +1,16 @@
-from xls_parser import XLSParser
-from rtf_parser import RTFParser
+from utils.xls_parser import XLSParser
+from utils.rtf_parser import RTFParser
 from lxml.etree import XMLSyntaxError
 from results_to_csv import parse_to_csv
-from upload_csv import upload
+from utils.upload_csv import upload
 import sys
 import re
 import glob
 import zipfile
 import datetime
+from utils.resolve_files import PatientResolver
+from threading import Thread
+from tqdm import trange
 
 if len(sys.argv) > 1:
     fname = sys.argv[1]
@@ -57,35 +60,59 @@ def fix_dates(df, xml):
     return df
 
 
-def process(fname):
-    patient_id = re.findall(".*(?:numer)?(?:nr)? (\d*).*", fname)[0]
+def process(results, history, patient_id, pbar=None):
+    # patient_id = re.findall(".*(?:numer)?(?:nr)? (\d*).*", fname)[0]
 
-    try:
-        lab_tests = XLSParser.parse(fname)
-        odt_name = fname.replace("Wyniki badań XLS", "Karty pobytu")
-        odt_name = odt_name.replace("XLS", "ODT").replace("xls", "odt")
-        with zipfile.ZipFile(odt_name, 'r') as zip_ref:
-            xml = zip_ref.read("content.xml").decode("utf-8")
-        lab_tests = fix_dates(lab_tests, xml)
-    except FileNotFoundError:
-        rtf_name = fname.replace("Wyniki badań XLS", "Karty pobytu")
-        rtf_name = rtf_name.replace("XLS", "RTF").replace("xls", "rtf")
-        lab_tests = RTFParser.parse(rtf_name)
+    # try:
+    #     lab_tests = XLSParser.parse(fname)
+    #     odt_name = fname.replace("Wyniki badań XLS", "Karty pobytu")
+    #     odt_name = odt_name.replace("XLS", "ODT").replace("xls", "odt")
+    #     with zipfile.ZipFile(odt_name, 'r') as zip_ref:
+    #         xml = zip_ref.read("content.xml").decode("utf-8")
+    #     lab_tests = fix_dates(lab_tests, xml)
+    # except FileNotFoundError:
+    #     rtf_name = fname.replace("Wyniki badań XLS", "Karty pobytu")
+    #     rtf_name = rtf_name.replace("XLS", "RTF").replace("xls", "rtf")
+    #     lab_tests = RTFParser.parse(rtf_name)
         # print(lab_tests)
         
-
+    if '.rtf' in history:
+        lab_tests = RTFParser.parse(history)
+    else:
+        lab_tests = XLSParser.parse(results)
+        with zipfile.ZipFile(history, 'r') as zip_ref:
+            xml = zip_ref.read("content.xml").decode("utf-8")
+        lab_tests = fix_dates(lab_tests, xml)
+    
+    pbar.read_tests += 1
     df = parse_to_csv(lab_tests, patient_id)
+    pbar.parsed_csvs += 1
     df.to_csv("processed.csv", index=False)
-    upload('http://localhost', df)
+    t = Thread(target=upload, args=('https://redcap.mcb.bio', df))
+    t.start()
+    pbar.uploaded += 1
+
+    pbar.set_postfix(read_tests=pbar.read_tests, parsed_csvs=pbar.parsed_csvs, uploaded=pbar.uploaded)
+    return t
 
 if __name__=="__main__":
-    for fname in glob.glob("/storage/PawelLab/wwydmanski/NCBR-COVID/FTP_DATA/data/upload/pacjenci 201-250/*/*.xls"):
-        try:
-            try:
-                print(fname)
-                process(fname)
-            except (ValueError, FileNotFoundError) as e:
-                raise e
+    threads = []
+    resolver = PatientResolver()
+
+    with trange(1, 60) as pbar:
+        pbar.read_tests = 0
+        pbar.parsed_csvs = 0
+        pbar.uploaded = 0
+        for i in pbar:
+            results, history = resolver.get_files(i)
+            if history is None:
+                print("History not found for patient", i)
                 continue
-        except XMLSyntaxError as e:
-            print("File corrupted!")
+
+            t = process(results, history, i, pbar)
+            threads.append(t)
+
+            if len(threads)==16:
+                for i in threads:
+                    i.join()
+                threads = []

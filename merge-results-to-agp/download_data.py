@@ -28,6 +28,6 @@ print('HTTP Status: ' + str(r.status_code))
 data = StringIO(r.text)
 # %%
 df = pd.read_csv(data)
-df.to_csv("survey_data.csv")
+df.to_csv("data/survey_data.csv")
 print(df)
 # %%

@@ -3,28 +3,30 @@ from datetime import datetime
 import pandas as pd
 import pgeocode
 
-#%%
-nomi = pgeocode.Nominatim('pl')
-
 # %%
-template = pd.read_csv("template.csv")
-data = pd.read_csv("survey_data.csv")
+def corrected_wrapper(func, range):
+    # 9.6 - 79
+    def _wrap(x):
+        res = func(x)
+        try:
+            if res<range[0] or res>range[1]:
+                return 'Unspecified'
+        except TypeError:
+            return res
+        return res
+    return _wrap    
 
-# %%
-template.columns
-
-#%%
-data.columns
-
-# %%
 def parse_age(row):
-    timestamp = row['ankieta_dla_uczestnika_badania_timestamp']
+    try:
+        timestamp = row['ankieta_dla_uczestnika_badania_timestamp']
+    except KeyError:
+        timestamp = datetime.now().strftime("%Y-%M-%d %H:%m:%S")
     birth_year = row['birth_year']
     try:
         return datetime.strptime(timestamp, "%Y-%M-%d %H:%m:%S").year - birth_year
     except ValueError:
         pass
-    return 0
+    return None
 
 def age_cat(age):
     if pd.isna(age):
@@ -56,17 +58,10 @@ def try_parse(type):
 
 def get_bmi(row):
     try:
-        return row['weight_kg']/(row['height_cm']**2)
+        bmi = row['weight_kg']/((row['height_cm']/100)**2)
+        return round(bmi, 3)
     except (ZeroDivisionError, TypeError):
         return "Unspecified"
-
-# def get_birth_year(row):
-#     try:
-#         current = row['ankieta_dla_uczestnika_badania_timestamp']
-#         current_year = datetime.strptime(current, "%Y-%m-%d %H:%M:%S")
-#         return current_year.year - row["age"]
-#     except ValueError:
-#         return "Unspecified"
 
 def get_bmi_cat(row):
     try:
@@ -88,6 +83,9 @@ def get_bmi_cat(row):
 
 
 class LatLonParser:
+    IDENTIFIER_COL = "patient_id"
+    NOMI = pgeocode.Nominatim('pl')
+
     def __init__(self):
         self.cache = {}
 
@@ -97,9 +95,9 @@ class LatLonParser:
             zipc = f"{zipc[:2]}-{zipc[2:]}01"
         except ValueError:
             return "Unspecified"
-        if row['record_id'] not in self.cache.keys():
-            self.cache[row['record_id']] = nomi.query_postal_code(zipc)[['latitude', 'longitude']]
-        return self.cache[row['record_id']]['latitude']
+        if row[LatLonParser.IDENTIFIER_COL] not in self.cache.keys():
+            self.cache[row[LatLonParser.IDENTIFIER_COL]] = LatLonParser.NOMI.query_postal_code(zipc)[['latitude', 'longitude']]
+        return self.cache[row[LatLonParser.IDENTIFIER_COL]]['latitude']
     
     def get_lon(self, row):
         try:
@@ -108,9 +106,9 @@ class LatLonParser:
         except ValueError:
             return "Unspecified"
 
-        if row['record_id'] not in self.cache.keys():
-            self.cache[row['record_id']] = nomi.query_postal_code(zipc)[['latitude', 'longitude']]
-        return self.cache[row['record_id']]['longitude']
+        if row[LatLonParser.IDENTIFIER_COL] not in self.cache.keys():
+            self.cache[row[LatLonParser.IDENTIFIER_COL]] = LatLonParser.NOMI.query_postal_code(zipc)[['latitude', 'longitude']]
+        return self.cache[row[LatLonParser.IDENTIFIER_COL]]['longitude']
 
 def get_alcohol(x):
     freq = try_parse(int)(x)
@@ -149,11 +147,11 @@ def get_contraceptives(row):
 lat_lon_parser = LatLonParser()
 
 mapping = {
+    "patient_id": ["patient_id", try_parse(int)],
     "age": parse_age,
     "age_cat": ["age", age_cat],
-    "age_corrected": ["age", try_parse(int)],
     "age_years": ["age", try_parse(int)],
-    # "birth_year": get_birth_year,
+    "age_corrected": ["age_years", corrected_wrapper(try_parse(int), [0, 101])],
     "sex": ["gender", map_numerical(["female", "male", "other"])],
     "pregnant": ["pregnant", map_numerical(["Yes", "No", "Unspecified"])],
     "race": ["race", map_numerical(["Caucasian", "African American", "Hispanic", "Asian or Pacific Islander", "Other", "Other"], "Unspecified")],
@@ -162,7 +160,7 @@ mapping = {
     "height_cm": ["height_cm", try_parse(int)],
     "height_units": lambda x: "cm",
     "bmi": get_bmi,
-    "bmi_corrected": get_bmi,
+    "bmi_corrected": corrected_wrapper(get_bmi, [9.6, 79]),
     "bmi_cat": get_bmi_cat,
     "latitude": lat_lon_parser.get_lat,
     "longitude": lat_lon_parser.get_lon,
@@ -216,25 +214,23 @@ mapping = {
 }
 
 # %%
-for col, mode in mapping.items():
-    if type(mode) is str:
-        template[col] = data[mode]
-    elif type(mode) is list:
-        template[col] = data[mode[0]].apply(mode[1])
-    else:
-        template[col] = data.apply(mode, axis=1)
-    data[col] = template[col]
+
+if __name__=="__main__":
+
+    template = pd.read_csv("data/template.csv")
+    # data = pd.read_csv("data/data_patients.csv", sep=';')
+    data = pd.read_csv("data/survey_like_filled.csv")
 
 
-# %%
-data.columns[60:80]
-
-#%%
-data[[i for i in data.columns if "allergic_to" in i]]
-
-# %%
-data[["diet_type", "allergies"]]
-
-# %%
-template.to_csv("template_filled.csv")
-# %%
+    for col, mode in mapping.items():
+        try:
+            if type(mode) is str:
+                template[col] = data[mode]
+            elif type(mode) is list:
+                template[col] = data[mode[0]].apply(mode[1])
+            else:
+                template[col] = data.apply(mode, axis=1)
+            data[col] = template[col]
+        except KeyError:
+            print("Error!", col)
+    template.to_csv("data/template_filled.csv")

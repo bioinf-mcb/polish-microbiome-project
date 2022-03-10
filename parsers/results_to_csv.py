@@ -26,7 +26,13 @@ def parse_to_csv(lab_tests, patient_id) -> pd.DataFrame:
         results['procedure'].append(row['Wynik'])
         results['value'].append(row['Wartość'])
 
-        test_norm = row['Norma'].rstrip(")").lstrip("(").split(" - ")
+        try:
+            test_norm = row['Norma'].rstrip(")").lstrip("(").split(" - ")
+        except AttributeError:
+            test_norm = row['Norma']
+            if test_norm==0:
+                test_norm = '-'
+
         if test_norm[0] == '':
             test_norm[0] = 0
         elif test_norm[0] == '-':

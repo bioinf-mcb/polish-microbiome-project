@@ -41,3 +41,4 @@ notebooks/
 # Analysis
 notebooks/lab_result_analysis/config.json
 **/db_pass
+.vscode

@@ -1,0 +1,1173 @@
+|Centralny Szpital Kliniczny MSWiA w Warszawie
+ul. Wołoska 137, 02-507 Warszawa - Mokotów
+
+Klinika Chorób Wewnętrznych i Gastroenterologii
+Kierownik Kliniki/Oddziału:
+prof.dr hab.n.med GRAŻYNA RYDZEWSKA-WYSZKOWSKA
+tel. (0-22) 508-20-00,    fax. (022) 508-10-44
+e-mail: gastroenterologia@cskmswia.pl
+|Warszawa, dnia 28/07/2021
+|
+
+Pacjent numer 311 
+
+Karta informacyjna z leczenia szpitalnego 
+
+
+Pobyt w Klinice od|28.05.2021|do|18.06.2021
+|
+ROZPOZNANIE
+
+ COVID-19. Guz wnęki wątroby naciekający oba przewody wątrobowe i opuszkę dwunastnicy, prawą gałą żyły wrotnej i tętnicy . wątrobowej. Przebyte krwawienie z opuszki dwunastnicy. Przebyta cholangiosepsa w 04/2021. Przebyte zakażenie C.difficile w 04/2021. Cukrzyca typu II. Stan po cholecystektomii w 1980r. Wyniszczenie białkowo-kaloryczne.  
+
+Wyniki badań
+
+
+
+AHCV HCV - p/c przeciw HCV (WZW typu C 
+
+2021-06-11  |AHCV 
+niereaktywny  |AHCV- 
+0.14  [index] ||||||
+Albuminy 
+
+2021-05-30  |ALB (3.50 - 5.20)
+1.96  [g/dl]|||||||
+ 
+
+2021-06-03  |ALB (3.50 - 5.20)
+1.87  [g/dl]|||||||
+ 
+
+2021-06-06  |ALB (3.50 - 5.20)
+1.90  [g/dl]|||||||
+ 
+
+2021-06-09  |ALB (3.50 - 5.20)
+1.78  [g/dl]|||||||
+Fosfataza alkaliczna 
+
+2021-05-28  |ALP (40 - 129)
+379 H [U/l]|||||||
+ 
+
+2021-05-31  |ALP (40 - 129)
+436 H [U/l]|||||||
+ 
+
+2021-06-01  |ALP (40 - 129)
+424 H [U/l]|||||||
+ 
+
+2021-06-03  |ALP (40 - 129)
+472 H [U/l]|||||||
+ 
+
+2021-06-06  |ALP (40 - 129)
+529 H [U/l]|||||||
+ 
+
+2021-06-09  |ALP (40 - 129)
+495 H [U/l]|||||||
+ALT 
+
+2021-05-28  |ALT (5 - 41)
+56 H [U/l]|||||||
+ 
+
+2021-05-31  |ALT (5 - 41)
+42 H [U/l]|||||||
+ 
+
+2021-06-03  |ALT (5 - 41)
+34  [U/l]|||||||
+ 
+
+2021-06-06  |ALT (5 - 41)
+37  [U/l]|||||||
+ 
+
+2021-06-09  |ALT (5 - 41)
+43 H [U/l]|||||||
+APTT 
+
+2021-05-28  |APTT (25.4 - 36.9)
+41.7  [sek.]|||||||
+ 
+
+2021-05-30  |APTT (25.4 - 36.9)
+38.5  [sek.]|||||||
+ 
+
+2021-05-31  |APTT (25.4 - 36.9)
+32.8  [sek.]|||||||
+ 
+
+2021-06-09  |APTT (25.4 - 36.9)
+27.0  [sek.]|||||||
+ 
+
+2021-06-11  |APTT (25.4 - 36.9)
+30.7  [sek.]|||||||
+ 
+
+2021-06-14  |APTT (25.4 - 36.9)
+32.3  [sek.]|||||||
+AST 
+
+2021-05-28  |AST (5 - 37)
+45 H [U/l]|||||||
+ 
+
+2021-05-31  |AST (5 - 37)
+43 H [U/l]|||||||
+ 
+
+2021-06-03  |AST (5 - 37)
+47 H [U/l]|||||||
+ 
+
+2021-06-06  |AST (5 - 37)
+54 H [U/l]|||||||
+ 
+
+2021-06-09  |AST (5 - 37)
+49 H [U/l]|||||||
+Witamina B12 
+
+2021-06-09  |B12 (191 - 663)
+1585 H [pg/ml]|||||||
+Bilirubina całkowita 
+
+2021-05-28  |BIL-T (0.30 - 1.20)
+5.28  [mg/dl]|||||||
+ 
+
+2021-05-30  |BIL-T (0.30 - 1.20)
+4.21  [mg/dl]|||||||
+ 
+
+2021-05-31  |BIL-T (0.30 - 1.20)
+3.91  [mg/dl]|||||||
+ 
+
+2021-06-01  |BIL-T (0.30 - 1.20)
+3.86  [mg/dl]|||||||
+ 
+
+2021-06-03  |BIL-T (0.30 - 1.20)
+3.19  [mg/dl]|||||||
+ 
+
+2021-06-06  |BIL-T (0.30 - 1.20)
+3.75  [mg/dl]|||||||
+ 
+
+2021-06-09  |BIL-T (0.30 - 1.20)
+3.64  [mg/dl]|||||||
+Wapń 
+
+2021-05-30  |CA (2.19 - 2.54)
+2.14  [mmol/L]|||||||
+ 
+
+2021-06-03  |CA (2.19 - 2.54)
+1.99  [mmol/L]|||||||
+ 
+
+2021-06-06  |CA (2.19 - 2.54)
+2.01  [mmol/L]|||||||
+ 
+
+2021-06-09  |CA (2.19 - 2.54)
+2.04  [mmol/L]|||||||
+Cholesterol całkowity 
+
+2021-06-06  |CHOL ( - 190)
+192  [mg/dl]|||||||
+ 
+
+2021-06-09  |CHOL ( - 190)
+158  [mg/dl]|||||||
+Białko ostrej fazy - CRP 
+
+2021-05-28  |CRP 
+160.5  [mg/L]|||||||
+ 
+
+2021-05-30  |CRP 
+160.6  [mg/L]|||||||
+ 
+
+2021-05-31  |CRP 
+86.0  [mg/L]|||||||
+ 
+
+2021-06-01  |CRP 
+54.4  [mg/L]|||||||
+ 
+
+2021-06-03  |CRP 
+28.7  [mg/L]|||||||
+ 
+
+2021-06-06  |CRP 
+15.8  [mg/L]|||||||
+ 
+
+2021-06-09  |CRP 
+33.8  [mg/L]|||||||
+D-dimer 
+
+2021-05-30  |DD ( - 500)
+15256  [µg/l FEU]|||||||
+ 
+
+2021-05-31  |DD ( - 500)
+19266  [µg/l FEU]|||||||
+ 
+
+2021-06-01  |DD ( - 500)
+21425  [µg/l FEU]|||||||
+ 
+
+2021-06-03  |DD ( - 500)
+13482  [µg/l FEU]|||||||
+ 
+
+2021-06-06  |DD ( - 500)
+13641  [µg/l FEU]|||||||
+Żelazo 
+
+2021-05-30  |FE (33 - 193)
+24 L [µg/dl]|||||||
+ 
+
+2021-06-09  |FE (33 - 193)
+28 L [µg/dl]|||||||
+Ferrytyna 
+
+2021-05-30  |FER (30 - 400)
+1139 H [ng/ml]|||||||
+ 
+
+2021-06-09  |FER (30 - 400)
+361  [ng/ml]|||||||
+Gamma-glutamylotranspeptydaza 
+
+2021-05-28  |GGT (8 - 61)
+355 H [U/l]|||||||
+ 
+
+2021-05-31  |GGT (8 - 61)
+419 H [U/l]|||||||
+ 
+
+2021-06-01  |GGT (8 - 61)
+479 H [U/l]|||||||
+ 
+
+2021-06-03  |GGT (8 - 61)
+624 H [U/l]|||||||
+ 
+
+2021-06-06  |GGT (8 - 61)
+1016 H [U/l]|||||||
+ 
+
+2021-06-09  |GGT (8 - 61)
+919 H [U/l]|||||||
+Glukoza 
+
+2021-05-28  |GLU (70 - 99)
+143 H [mg/dl]|||||||
+ 
+
+2021-05-30  |GLU (70 - 99)
+165 H [mg/dl]|||||||
+ 
+
+2021-06-03  |GLU (70 - 99)
+223 H [mg/dl]|||||||
+ 
+
+2021-06-06  |GLU (70 - 99)
+152 H [mg/dl]|||||||
+ 
+
+2021-06-09  |GLU (70 - 99)
+189 H [mg/dl]|||||||
+ 
+
+2021-06-11  |GLU (70 - 99)
+257 H [mg/dl]|||||||
+Hb A1c Hemoglobina glikowana 
+
+2021-06-09  |HBA1C% ( - 5.7)
+5.80  [%]|HBA1CM ( - 39)
+40  [mmol/mol] ||||||
+HBs Ag 
+
+2021-06-11  |HBS-AG 
+niereaktywny  |HBS-AG- 
+0.24  [index] ||||||
+HDL-cholesterol 
+
+2021-06-09  |HDL (40)
+16  [mg/dl]|||||||
+HIV Ag/Ac 
+
+2021-06-11  |HIV- 
+niereaktywny  |HIV 
+0.05  [index] ||||||
+Potas 
+
+2021-05-28  |K (3.50 - 5.30)
+4.62  [mmol/L]|||||||
+ 
+
+2021-05-30  |K (3.50 - 5.30)
+4.65  [mmol/L]|||||||
+ 
+
+2021-05-31  |K (3.50 - 5.30)
+4.25  [mmol/L]|||||||
+ 
+
+2021-06-09  |K (3.50 - 5.30)
+2.98  [mmol/L]|||||||
+ 
+
+2021-06-11  |K (3.50 - 5.30)
+3.44  [mmol/L]|||||||
+ 
+
+2021-06-14  |K (3.50 - 5.30)
+4.00  [mmol/L]|||||||
+Kreatynina 
+
+2021-05-28  |KREA (0.70 - 1.20)
+1.57  [mg/dl]|EGFR (60)
+43  [ml/min] ||||||
+ 
+
+2021-05-30  |KREA (0.70 - 1.20)
+1.22  [mg/dl]|EGFR (60)
+57  [ml/min] ||||||
+ 
+
+2021-05-31  |KREA (0.70 - 1.20)
+1.06  [mg/dl]|EGFR (60)
+67  [ml/min] ||||||
+ 
+
+2021-06-01  |KREA (0.70 - 1.20)
+0.85  [mg/dl]|EGFR (60)
+87  [ml/min] ||||||
+ 
+
+2021-06-03  |KREA (0.70 - 1.20)
+0.86  [mg/dl]|EGFR (60)
+86  [ml/min] ||||||
+ 
+
+2021-06-06  |KREA (0.70 - 1.20)
+0.81  [mg/dl]|EGFR (60)
+92  [ml/min] ||||||
+ 
+
+2021-06-09  |KREA (0.70 - 1.20)
+0.91  [mg/dl]|EGFR (60)
+80  [ml/min] ||||||
+ 
+
+2021-06-11  |KREA (0.70 - 1.20)
+1.15  [mg/dl]|EGFR (60)
+61  [ml/min] ||||||
+ 
+
+2021-06-14  |KREA (0.70 - 1.20)
+0.80  [mg/dl]|EGFR (60)
+93  [ml/min] ||||||
+Kwas foliowy 
+
+2021-06-09  |KW-FOL (3.9 - 26.8)
+6.7  [ng/ml]|||||||
+LDH (L) 
+
+2021-06-06  |LDH (135 - 225)
+240 H [U/l]|||||||
+LDL-wyliczane 
+
+2021-06-09  |LDL-W ( - 100)
+118  [mg/dl]|||||||
+Magnez 
+
+2021-06-03  |MG (1.60 - 2.40)
+1.90  [mg/dl]|||||||
+ 
+
+2021-06-06  |MG (1.60 - 2.40)
+1.89  [mg/dl]|||||||
+Morfologia krwi obwodowej 
+
+2021-05-28  |WBC (4.50 - 10.00)
+18.39  [tys/µl]|RBC (3.1 - 5.7)
+2.86  [mln/µl] |HGB (12.2 - 15.8)
+9.2  [g/dl]|HCT (30.0 - 49.5)
+28.5  [%]|MCV (81.0 - 94.0)
+99.7  [fl]|MCH (28.0 - 34.0)
+32.2  [pg]|MCHC (31.0 - 38.0)
+32.3  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+16.2  [%]|RDW-SD (35.1 - 43.9)
+59.7  [fl] |PLT (150 - 400)
+229  [tys/µl]|PDW (9.8 - 16.2)
+15.9  [fl]|P-LCR (19.2 - 47.0)
+39.0  [%]|PCT (0.08 - 1.00)
+0.28  [%]|MPV (8.0 - 11.0)
+12.1  [fl]|
+
+|NEU (1.90 - 7.00)
+16.79  [tys/µl]|NEU% (40.0 - 68.0)
+91.4  [%] |LY (0.90 - 5.00)
+1.00  [tys/µl]|LY% (19.0 - 48.0)
+5.4  [%]|MO (0.20 - 0.80)
+0.48  [tys/µl]|MO% (5.3 - 12.2)
+2.6  [%]|EO (0.04 - 0.54)
+0.00  [tys/µl]|
+
+|EOS% (0.8 - 7.0)
+0.0  [%]|BASO (0.00 - 0.20)
+0.02  [tys/µl] |BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.10  [tys/µl]|IG% (0.00 - 0.60)
+0.50  [%]|NRBC (0.00 - 0.11)
+0.00  [tys/µl]|NRBC% (0.00 - 0.00)
+0.00  [%]|
+ 
+
+2021-05-30  |WBC (4.50 - 10.00)
+16.96  [tys/µl]|RBC (3.1 - 5.7)
+2.98  [mln/µl] |HGB (12.2 - 15.8)
+9.7  [g/dl]|HCT (30.0 - 49.5)
+30.3  [%]|MCV (81.0 - 94.0)
+101.7  [fl]|MCH (28.0 - 34.0)
+32.6  [pg]|MCHC (31.0 - 38.0)
+32.0  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+16.8  [%]|RDW-SD (35.1 - 43.9)
+62.3  [fl] |PLT (150 - 400)
+253  [tys/µl]|PDW (9.8 - 16.2)
+12.5  [fl]|P-LCR (19.2 - 47.0)
+32.5  [%]|PCT (0.08 - 1.00)
+0.28  [%]|MPV (8.0 - 11.0)
+11.0  [fl]|
+
+|NEU (1.90 - 7.00)
+15.61  [tys/µl]|NEU% (40.0 - 68.0)
+92.1  [%] |LY (0.90 - 5.00)
+0.70  [tys/µl]|LY% (19.0 - 48.0)
+4.1  [%]|MO (0.20 - 0.80)
+0.47  [tys/µl]|MO% (5.3 - 12.2)
+2.8  [%]|EO (0.04 - 0.54)
+0.00  [tys/µl]|
+
+|EOS% (0.8 - 7.0)
+0.0  [%]|BASO (0.00 - 0.20)
+0.02  [tys/µl] |BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.16  [tys/µl]|IG% (0.00 - 0.60)
+0.90  [%]|NRBC (0.00 - 0.11)
+0.00  [tys/µl]|NRBC% (0.00 - 0.00)
+0.00  [%]|
+ 
+
+2021-05-31  |WBC (4.50 - 10.00)
+16.36  [tys/µl]|RBC (3.1 - 5.7)
+3.20  [mln/µl] |HGB (12.2 - 15.8)
+10.4  [g/dl]|HCT (30.0 - 49.5)
+32.8  [%]|MCV (81.0 - 94.0)
+102.5  [fl]|MCH (28.0 - 34.0)
+32.5  [pg]|MCHC (31.0 - 38.0)
+31.7  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+17.0  [%]|RDW-SD (35.1 - 43.9)
+63.7  [fl] |PLT (150 - 400)
+233  [tys/µl]|PDW (9.8 - 16.2)
+13.7  [fl]|P-LCR (19.2 - 47.0)
+38.7  [%]|PCT (0.08 - 1.00)
+0.28  [%]|MPV (8.0 - 11.0)
+12.0  [fl]|
+
+|NEU (1.90 - 7.00)
+14.55  [tys/µl]|NEU% (40.0 - 68.0)
+88.9  [%] |LY (0.90 - 5.00)
+1.13  [tys/µl]|LY% (19.0 - 48.0)
+6.9  [%]|MO (0.20 - 0.80)
+0.54  [tys/µl]|MO% (5.3 - 12.2)
+3.3  [%]|EO (0.04 - 0.54)
+0.00  [tys/µl]|
+
+|EOS% (0.8 - 7.0)
+0.0  [%]|BASO (0.00 - 0.20)
+0.01  [tys/µl] |BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.13  [tys/µl]|IG% (0.00 - 0.60)
+0.80  [%]|NRBC (0.00 - 0.11)
+0.00  [tys/µl]|NRBC% (0.00 - 0.00)
+0.00  [%]|
+ 
+
+2021-06-01  |WBC (4.50 - 10.00)
+17.06  [tys/µl]|RBC (3.1 - 5.7)
+3.22  [mln/µl] |HGB (12.2 - 15.8)
+10.6  [g/dl]|HCT (30.0 - 49.5)
+32.4  [%]|MCV (81.0 - 94.0)
+100.6  [fl]|MCH (28.0 - 34.0)
+32.9  [pg]|MCHC (31.0 - 38.0)
+32.7  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+17.2  [%]|RDW-SD (35.1 - 43.9)
+62.7  [fl] |PLT (150 - 400)
+264  [tys/µl]|PDW (9.8 - 16.2)
+14.2  [fl]|P-LCR (19.2 - 47.0)
+36.5  [%]|PCT (0.08 - 1.00)
+0.31  [%]|MPV (8.0 - 11.0)
+11.6  [fl]|
+
+|NEU (1.90 - 7.00)
+14.98  [tys/µl]|NEU% (40.0 - 68.0)
+87.7  [%] |LY (0.90 - 5.00)
+1.50  [tys/µl]|LY% (19.0 - 48.0)
+8.8  [%]|MO (0.20 - 0.80)
+0.47  [tys/µl]|MO% (5.3 - 12.2)
+2.8  [%]|EO (0.04 - 0.54)
+0.01  [tys/µl]|
+
+|EOS% (0.8 - 7.0)
+0.1  [%]|BASO (0.00 - 0.20)
+0.02  [tys/µl] |BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.08  [tys/µl]|IG% (0.00 - 0.60)
+0.50  [%]|NRBC (0.00 - 0.11)
+0.00  [tys/µl]|NRBC% (0.00 - 0.00)
+0.00  [%]|
+ 
+
+2021-06-03  |WBC (4.50 - 10.00)
+11.01  [tys/µl]|RBC (3.1 - 5.7)
+3.09  [mln/µl] |HGB (12.2 - 15.8)
+10.1  [g/dl]|HCT (30.0 - 49.5)
+31.2  [%]|MCV (81.0 - 94.0)
+101.0  [fl]|MCH (28.0 - 34.0)
+32.7  [pg]|MCHC (31.0 - 38.0)
+32.4  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+17.2  [%]|RDW-SD (35.1 - 43.9)
+63.1  [fl] |PLT (150 - 400)
+189  [tys/µl]|PDW (9.8 - 16.2)
+15.7  [fl]|P-LCR (19.2 - 47.0)
+39.1  [%]|PCT (0.08 - 1.00)
+0.23  [%]|MPV (8.0 - 11.0)
+12.0  [fl]|
+
+|NEU (1.90 - 7.00)
+10.03  [tys/µl]|NEU% (40.0 - 68.0)
+91.0  [%] |LY (0.90 - 5.00)
+0.49  [tys/µl]|LY% (19.0 - 48.0)
+4.5  [%]|MO (0.20 - 0.80)
+0.43  [tys/µl]|MO% (5.3 - 12.2)
+3.9  [%]|EO (0.04 - 0.54)
+0.00  [tys/µl]|
+
+|EOS% (0.8 - 7.0)
+0.0  [%]|BASO (0.00 - 0.20)
+0.01  [tys/µl] |BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.05  [tys/µl]|IG% (0.00 - 0.60)
+0.50  [%]|NRBC (0.00 - 0.11)
+0.01  [tys/µl]|NRBC% (0.00 - 0.00)
+0.10  [%]|
+ 
+
+2021-06-06  |WBC (4.50 - 10.00)
+11.12  [tys/µl]|RBC (3.1 - 5.7)
+3.36  [mln/µl] |HGB (12.2 - 15.8)
+11.1  [g/dl]|HCT (30.0 - 49.5)
+33.4  [%]|MCV (81.0 - 94.0)
+99.4  [fl]|MCH (28.0 - 34.0)
+33.0  [pg]|MCHC (31.0 - 38.0)
+33.2  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+17.7  [%]|RDW-SD (35.1 - 43.9)
+65.1  [fl] |PLT (150 - 400)
+177  [tys/µl]|PDW (9.8 - 16.2)
+14.4  [fl]|P-LCR (19.2 - 47.0)
+40.2  [%]|PCT (0.08 - 1.00)
+0.21  [%]|MPV (8.0 - 11.0)
+12.0  [fl]|
+
+|NEU (1.90 - 7.00)
+9.66  [tys/µl]|NEU% (40.0 - 68.0)
+86.9  [%] |LY (0.90 - 5.00)
+0.83  [tys/µl]|LY% (19.0 - 48.0)
+7.5  [%]|MO (0.20 - 0.80)
+0.57  [tys/µl]|MO% (5.3 - 12.2)
+5.1  [%]|EO (0.04 - 0.54)
+0.00  [tys/µl]|
+
+|EOS% (0.8 - 7.0)
+0.0  [%]|BASO (0.00 - 0.20)
+0.01  [tys/µl] |BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.05  [tys/µl]|IG% (0.00 - 0.60)
+0.40  [%]|NRBC (0.00 - 0.11)
+0.01  [tys/µl]|NRBC% (0.00 - 0.00)
+0.10  [%]|
+ 
+
+2021-06-09  |WBC (4.50 - 10.00)
+14.59  [tys/µl]|RBC (3.1 - 5.7)
+3.12  [mln/µl] |HGB (12.2 - 15.8)
+10.4  [g/dl]|HCT (30.0 - 49.5)
+31.0  [%]|MCV (81.0 - 94.0)
+99.4  [fl]|MCH (28.0 - 34.0)
+33.3  [pg]|MCHC (31.0 - 38.0)
+33.5  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+18.0  [%]|RDW-SD (35.1 - 43.9)
+65.7  [fl] |PLT (150 - 400)
+113 L [tys/µl]|PDW (9.8 - 16.2)
+19.2  [fl]|P-LCR (19.2 - 47.0)
+50.3  [%]|PCT (0.08 - 1.00)
+0.15  [%]|MPV (8.0 - 11.0)
+13.5  [fl]|
+
+|NEU (1.90 - 7.00)
+13.49  [tys/µl]|NEU% (40.0 - 68.0)
+92.5  [%] |LY (0.90 - 5.00)
+0.72  [tys/µl]|LY% (19.0 - 48.0)
+4.9  [%]|MO (0.20 - 0.80)
+0.28  [tys/µl]|MO% (5.3 - 12.2)
+1.9  [%]|EO (0.04 - 0.54)
+0.00  [tys/µl]|
+
+|EOS% (0.8 - 7.0)
+0.0  [%]|BASO (0.00 - 0.20)
+0.01  [tys/µl] |BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.09  [tys/µl]|IG% (0.00 - 0.60)
+0.60  [%]|NRBC (0.00 - 0.11)
+0.00  [tys/µl]|NRBC% (0.00 - 0.00)
+0.00  [%]|
+ 
+
+2021-06-11  |WBC (4.50 - 10.00)
+13.62  [tys/µl]|RBC (3.1 - 5.7)
+3.33  [mln/µl] |HGB (12.2 - 15.8)
+11.0  [g/dl]|HCT (30.0 - 49.5)
+32.4  [%]|MCV (81.0 - 94.0)
+97.3  [fl]|MCH (28.0 - 34.0)
+33.0  [pg]|MCHC (31.0 - 38.0)
+34.0  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+19.2  [%]|RDW-SD (35.1 - 43.9)
+68.4  [fl] |PLT (150 - 400)
+68 L [tys/µl]|PDW (9.8 - 16.2)
+21.6  [fl]|P-LCR (19.2 - 47.0)
+55.5  [%]|PCT (0.08 - 1.00)
+0.09  [%]|MPV (8.0 - 11.0)
+13.8  [fl]|
+
+|NEU (1.90 - 7.00)
+12.56  [tys/µl]|NEU% (40.0 - 68.0)
+92.2  [%] |LY (0.90 - 5.00)
+0.73  [tys/µl]|LY% (19.0 - 48.0)
+5.4  [%]|MO (0.20 - 0.80)
+0.25  [tys/µl]|MO% (5.3 - 12.2)
+1.8  [%]|EO (0.04 - 0.54)
+0.00  [tys/µl]|
+
+|EOS% (0.8 - 7.0)
+0.0  [%]|BASO (0.00 - 0.20)
+0.01  [tys/µl] |BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.07  [tys/µl]|IG% (0.00 - 0.60)
+0.50  [%]|NRBC (0.00 - 0.11)
+0.01  [tys/µl]|NRBC% (0.00 - 0.00)
+0.10  [%]|
+ 
+
+2021-06-14  |WBC (4.50 - 10.00)
+11.93  [tys/µl]|RBC (3.1 - 5.7)
+2.99  [mln/µl] |HGB (12.2 - 15.8)
+9.8  [g/dl]|HCT (30.0 - 49.5)
+30.5  [%]|MCV (81.0 - 94.0)
+102.0  [fl]|MCH (28.0 - 34.0)
+32.8  [pg]|MCHC (31.0 - 38.0)
+32.1  [g/dl]|
+
+|RDW-CV (11.5 - 14.5)
+21.4  [%]|RDW-SD (35.1 - 43.9)
+78.4  [fl] |PLT (150 - 400)
+25 L [tys/µl]|NEU (1.90 - 7.00)
+11.23  [tys/µl]|NEU% (40.0 - 68.0)
+94.1  [%]|LY (0.90 - 5.00)
+0.37  [tys/µl]|LY% (19.0 - 48.0)
+3.1  [%]|
+
+|MO (0.20 - 0.80)
+0.25  [tys/µl]|MO% (5.3 - 12.2)
+2.1  [%] |EO (0.04 - 0.54)
+0.00  [tys/µl]|EOS% (0.8 - 7.0)
+0.0  [%]|BASO (0.00 - 0.20)
+0.01  [tys/µl]|BASO% (0.0 - 2.0)
+0.1  [%]|IG (0.00 - 0.09)
+0.07  [tys/µl]|
+
+|IG% (0.00 - 0.60)
+0.60  [%]|NRBC (0.00 - 0.11)
+0.02  [tys/µl] |NRBC% (0.00 - 0.00)
+0.20  [%]|IPF% (1.1 - 6.1)
+17.0  [%]||||
+Sód 
+
+2021-05-28  |NA (135 - 145)
+139  [mmol/L]|||||||
+ 
+
+2021-05-30  |NA (135 - 145)
+144  [mmol/L]|||||||
+ 
+
+2021-05-31  |NA (135 - 145)
+144  [mmol/L]|||||||
+ 
+
+2021-06-09  |NA (135 - 145)
+146 H [mmol/L]|||||||
+ 
+
+2021-06-11  |NA (135 - 145)
+145  [mmol/L]|||||||
+ 
+
+2021-06-14  |NA (135 - 145)
+152 H [mmol/L]|||||||
+Fosfor nieorganiczny 
+
+2021-06-03  |P (2.50 - 4.50)
+2.19  [mg/dl]|||||||
+ 
+
+2021-06-06  |P (2.50 - 4.50)
+2.34  [mg/dl]|||||||
+ 
+
+2021-06-09  |P (2.50 - 4.50)
+1.60  [mg/dl]|||||||
+Prokalcytonina PCT 
+
+2021-05-28  |P-KALC ( - 0.5)
+1.25  [ng/ml]|||||||
+ 
+
+2021-05-30  |P-KALC ( - 0.5)
+0.66  [ng/ml]|||||||
+ 
+
+2021-06-01  |P-KALC ( - 0.5)
+0.40  [ng/ml]|||||||
+ 
+
+2021-06-03  |P-KALC ( - 0.5)
+0.26  [ng/ml]|||||||
+Czas protrombinowy 
+
+2021-05-28  |INR (0.90 - 1.20)
+1.58  |PT (9.4 - 12.5)
+17.2  [sek.] |PT%WSK (80.0 - 120.0)
+53  [%]|||||
+ 
+
+2021-05-30  |INR (0.90 - 1.20)
+1.64  |PT (9.4 - 12.5)
+17.9  [sek.] |PT%WSK (80.0 - 120.0)
+56  [%]|||||
+ 
+
+2021-05-31  |INR (0.90 - 1.20)
+1.54  |PT (9.4 - 12.5)
+16.8  [sek.] |PT%WSK (80.0 - 120.0)
+61  [%]|||||
+ 
+
+2021-06-09  |INR (0.90 - 1.20)
+1.50  |PT (9.4 - 12.5)
+16.4  [sek.] |PT%WSK (80.0 - 120.0)
+56  [%]|||||
+ 
+
+2021-06-11  |INR (0.90 - 1.20)
+1.76  |PT (9.4 - 12.5)
+19.1  [sek.] |PT%WSK (80.0 - 120.0)
+46  [%]|||||
+ 
+
+2021-06-14  |INR (0.90 - 1.20)
+1.82  |PT (9.4 - 12.5)
+19.8  [sek.] |PT%WSK (80.0 - 120.0)
+49  [%]|||||
+Równowaga kwasowo - zasadowa 
+
+2021-06-06  |PH (7.350 - 7.450)
+7.431  |PCO2 (35 - 45)
+45  [mmHg] |PO2 (72 - 107)
+28 L [mmHg]|HCO3A (21.0 - 27.0)
+29.8  [mmol/L]|HCO3S (21.0 - 25.0)
+27.8  [mmol/L]|BE 
+4.8  [mmol/L]|BEECF 
+5.5  [mmol/L]|
+
+|SO2 (94 - 99)
+51 L [%]|P50 (24 - 28)
+28  [mmHg] |NA+ (135 - 145)
+143  [mmol/L]|K+ 
+3.50  [mmol/L]|CL- (97 - 107)
+108 H [mmol/L]|CA2+ (1.13 - 1.32)
+1.18  [mmol/L]|GLU 
+153  [mg/dl]|
+
+|BILI 
+3.10  [mg/dl]|LAC (0.9 - 1.7)
+1.7  [mmol/L] |AG (8 - 16)
+5 L [mmol/L]|HCT 
+35  [%]|THB 
+11.4  [g/dl]|O2HB (94 - 97)
+51 L [%]|HHB (0.0 - 5.0)
+48.3  [%]|
+
+|METHB (0.0 - 1.0)
+0.0  [%]|COHB (1.0 - 1.5)
+0.8  [%] ||||||
+ 
+
+2021-06-09  |PH (7.350 - 7.450)
+7.408  |PCO2 (35 - 45)
+46 H [mmHg] |PO2 (72 - 107)
+28 L [mmHg]|HCO3A (21.0 - 27.0)
+28.7  [mmol/L]|HCO3S (21.0 - 25.0)
+26.5  [mmol/L]|BE 
+3.4  [mmol/L]|BEECF 
+4.0  [mmol/L]|
+
+|SO2 (94 - 99)
+47 L [%]|P50 (24 - 28)
+29 H [mmHg] |NA+ (135 - 145)
+144  [mmol/L]|K+ 
+2.80  [mmol/L]|CL- (97 - 107)
+110 H [mmol/L]|CA2+ (1.13 - 1.32)
+1.20  [mmol/L]|GLU 
+178  [mg/dl]|
+
+|BILI (0.30 - 1.20)
+3.50  [mg/dl]|LAC (0.9 - 1.7)
+2.7  [mmol/L] |AG (8 - 16)
+6 L [mmol/L]|HCT 
+33  [%]|THB 
+10.9  [g/dl]|O2HB (94 - 97)
+47 L [%]|HHB (0.0 - 5.0)
+52.0  [%]|
+
+|METHB (0.0 - 1.0)
+0.1  [%]|COHB (1.0 - 1.5)
+1.1  [%] ||||||
+Równowaga kwasowo - zasadowa (rozszerzona) 
+
+2021-06-01  |PH (7.350 - 7.450)
+7.457  |PCO2 (35 - 45)
+32 L [mmHg] |PO2 (72 - 107)
+93  [mmHg]|HCO3A (21.0 - 27.0)
+22.5  [mmol/L]|HCO3S (21.0 - 25.0)
+23.7  [mmol/L]|BE 
+-0.8  [mmol/L]|BEECF 
+-1.4  [mmol/L]|
+
+|SO2 (94 - 99)
+98  [%]|P50 (24 - 28)
+25  [mmHg] |NA+ (135 - 145)
+143  [mmol/L]|K+ (3.50 - 5.30)
+3.60  [mmol/L]|CL- (97 - 107)
+114 H [mmol/L]|CA2+ (1.13 - 1.32)
+1.20  [mmol/L]|GLU 
+143  [mg/dl]|
+
+|BILI (0.30 - 1.20)
+3.80  [mg/dl]|LAC (0.9 - 1.7)
+2.6  [mmol/L] |AG (8 - 16)
+7 L [mmol/L]|HCT 
+34  [%]|THB 
+11.0  [g/dl]|O2HB (94 - 97)
+97  [%]|HHB (0.0 - 5.0)
+2.0  [%]|
+
+|METHB (0.0 - 1.0)
+0.3  [%]|COHB (1.0 - 1.5)
+0.9  [%] ||||||
+Triglicerydy 
+
+2021-06-03  |TG ( - 150)
+132  [mg/dl]|||||||
+ 
+
+2021-06-06  |TG ( - 150)
+229  [mg/dl]|||||||
+ 
+
+2021-06-09  |TG ( - 150)
+116  [mg/dl]|||||||
+Białko całkowite 
+
+2021-05-30  |TP (6.40 - 8.30)
+6.62  [g/dl]|||||||
+ 
+
+2021-06-03  |TP (6.40 - 8.30)
+5.87  [g/dl]|||||||
+ 
+
+2021-06-06  |TP (6.40 - 8.30)
+5.81  [g/dl]|||||||
+ 
+
+2021-06-09  |TP (6.40 - 8.30)
+5.32  [g/dl]|||||||
+TSH hormon tyreotropowy 
+
+2021-05-28  |TSH (0.27 - 4.20)
+1.650  [µIU/ml]|||||||
+ 
+
+2021-05-30  |TSH (0.27 - 4.20)
+0.771  [µIU/ml]|||||||
+Mocznik 
+
+2021-05-28  |UREA (17 - 49)
+160 H [mg/dl]|||||||
+ 
+
+2021-05-30  |UREA (17 - 49)
+114 H [mg/dl]|||||||
+ 
+
+2021-05-31  |UREA (17 - 49)
+86 H [mg/dl]|||||||
+ 
+
+2021-06-01  |UREA (17 - 49)
+68 H [mg/dl]|||||||
+ 
+
+2021-06-03  |UREA (17 - 49)
+62 H [mg/dl]|||||||
+ 
+
+2021-06-06  |UREA (17 - 49)
+62 H [mg/dl]|||||||
+ 
+
+2021-06-09  |UREA (17 - 49)
+78 H [mg/dl]|||||||
+ 
+
+2021-06-11  |UREA (17 - 49)
+94 H [mg/dl]|||||||
+ 
+
+2021-06-14  |UREA (17 - 49)
+92 H [mg/dl]|||||||
+Kwas moczowy 
+
+2021-06-09  |URIC ( - 8.4)
+2.00  [mg/dl]|||||||
+Koronawirus SARS-CoV-2 
+
+2021-06-09  |D-ZAK 
+09-06-2021  |WYN-BAD 
+ujemny   |UWAGI 
+Nie wykryto RNA wirusa SARS-CoV-2. \X0A\Nie stwierdzono obecności genów: N, E, RdRp lub ORF1ab.\X0A\Wynik ujemny nie wyklucza zakażenia.  |MAT-DIA 
+wymaz  ||||
+Interleukina 6 
+
+2021-05-28  |IL-6 ( - 7.0)
+188.00  [pg/ml]|||||||
+
+ 
+
+PODANE LEKI
+OPTILYTE OP. 500 ML Nazwa międzynaro.: OPTILYTE OP. 500 ML  Dawkowanie: 2x(10,16) Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-05-28 21:32 do:2021-05-30 16:00 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: GLUCOSE  Dawkowanie: 2x(8,20) Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-05-28 21:33 do:2021-05-31 20:00 
+SIOFOR 500 0,5 G, OP. 30 TABL. Nazwa międzynaro.: METFORMIN  Dawkowanie: 2x(8,20) Droga podania: Doustnie  Ilość jedn.:1 Okres podawania od:2021-05-28 21:33 do:2021-05-29 08:00 
+PANTOPRAZ 20 MG 0,02 G, OP. 28 TABL Nazwa międzynaro.: PANTOPRAZOLE  Dawkowanie: 2x(8,20) Droga podania: Doustnie  Ilość jedn.:1 Okres podawania od:2021-05-28 21:34 do:2021-05-29 08:00 
+NO-SPA AMPU£KI 0,04 G/2 ML, OP. 5 AMP. Nazwa międzynaro.: DROTAVERINE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-05-28 21:38 do:2021-05-31 20:00 
+FRAGMIN 2500 J.M./0,2 ML, OP. 10 AMPU£KOSTRZYKAWKA Nazwa międzynaro.: DALTEPARIN  Dawkowanie: 1x(20) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-05-28 21:38 do:2021-05-30 20:00 
+DEXAVEN 0,004 G/1 ML, OP. 10 AMP. Nazwa międzynaro.: DEXAMETHASONE PHOSPHATE  Dawkowanie: 1x(8) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-05-29 08:00 do:2021-06-10 08:00 
+METRONIDAZOL 0,5% 100 ML Nazwa międzynaro.: Metronidazole  Dawkowanie: 3x(6,14,22) Droga podania: Dożylnie  Ilość jedn.:100 Okres podawania od:2021-05-29 14:00 do:2021-06-06 22:00 
+VEKLURY INJ. 100 MG 100 MG 1fiol. 267973 OP. 1 FIOL. Nazwa międzynaro.: REMDESIVIR  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-05-29 12:16 do:2021-06-02 14:00 
+HELICID 40 0,04 G, OP. 1 FIOLKA Nazwa międzynaro.: OMEPRAZOLE  Dawkowanie: 2x(8,20) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-05-29 20:00 do:2021-06-17 20:00 
+PIPERACILLIN/TAZOBACTAM KABI 4 G + 0,5 G OP. 10 FIOLKA Nazwa międzynaro.: PIPERACILLIN/TAZOBACTAM KABI 4 G + 0,5 G OP. 10 FIOLKA  Dawkowanie: 3x(6,14,22) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-05-29 14:00 do:2021-06-11 06:00 
+FRAGMIN 5000 J.M./0,2 ML, OP. 10 AMPU£KOSTRZYKAWKA Nazwa międzynaro.: DALTEPARIN  Dawkowanie: 2x(8,20) Droga podania: Podskórnie  Ilość jedn.:1 Okres podawania od:2021-05-31 20:00 do:2021-06-17 20:00 
+ONDANSETRON KABI 2 MG/ML 0,008 G/4 ML, OP. 5 AMP. Nazwa międzynaro.: ONDANSETRON  Dawkowanie: 2x(8,18) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-06 18:00 do:2021-06-10 18:00 
+MATRIFEN 0,05 MG/1 H = 0,0012 G/24 H, OP. 5 PLASTER Nazwa międzynaro.: FENTANYL  Dawkowanie: Niestandardowo Droga podania: Na skórę  Ilość jedn.:1 Okres podawania od:2021-06-06 16:00 do:2021-06-14 16:00 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: GLUCOSE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-09 12:10 do: 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: POTASSIUM CHLORIDE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-09 12:10 do: 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: MAGNESIUM SULFATE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-09 12:10 do: 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: INSULIN  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-09 12:10 do: 
+KALIUM CHLORATUM 15% KABI 1,5 G/10 ML, OP. 20 AMP. Nazwa międzynaro.: GLUCOSE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-06-09 12:10 do: 
+KALIUM CHLORATUM 15% KABI 1,5 G/10 ML, OP. 20 AMP. Nazwa międzynaro.: POTASSIUM CHLORIDE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-06-09 12:10 do: 
+KALIUM CHLORATUM 15% KABI 1,5 G/10 ML, OP. 20 AMP. Nazwa międzynaro.: MAGNESIUM SULFATE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-06-09 12:10 do: 
+KALIUM CHLORATUM 15% KABI 1,5 G/10 ML, OP. 20 AMP. Nazwa międzynaro.: INSULIN  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-06-09 12:10 do: 
+INJ. MAGNESII SULFURICI 20% POLPHARMA 2 G/10 ML, OP. 10 AMP. Nazwa międzynaro.: GLUCOSE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 12:10 do: 
+INJ. MAGNESII SULFURICI 20% POLPHARMA 2 G/10 ML, OP. 10 AMP. Nazwa międzynaro.: POTASSIUM CHLORIDE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 12:10 do: 
+INJ. MAGNESII SULFURICI 20% POLPHARMA 2 G/10 ML, OP. 10 AMP. Nazwa międzynaro.: MAGNESIUM SULFATE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 12:10 do: 
+INJ. MAGNESII SULFURICI 20% POLPHARMA 2 G/10 ML, OP. 10 AMP. Nazwa międzynaro.: INSULIN  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 12:10 do: 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: GLUCOSE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:6 Okres podawania od:2021-06-09 12:10 do: 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: POTASSIUM CHLORIDE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:6 Okres podawania od:2021-06-09 12:10 do: 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: MAGNESIUM SULFATE  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:6 Okres podawania od:2021-06-09 12:10 do: 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: INSULIN  Dawkowanie: Niestandardowo Droga podania: Dożylnie  Ilość jedn.:6 Okres podawania od:2021-06-09 12:10 do: 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: GLUCOSE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-09 14:05 do: 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: POTASSIUM CHLORIDE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-09 14:05 do: 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: MAGNESIUM SULFATE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-09 14:05 do: 
+GLUCOSUM 5% FRESENIUS 5%, OP. 500 ML Nazwa międzynaro.: INSULIN  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-09 14:05 do: 
+KALIUM CHLORATUM 15% KABI 1,5 G/10 ML, OP. 20 AMP. Nazwa międzynaro.: GLUCOSE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-06-09 14:05 do: 
+KALIUM CHLORATUM 15% KABI 1,5 G/10 ML, OP. 20 AMP. Nazwa międzynaro.: POTASSIUM CHLORIDE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-06-09 14:05 do: 
+KALIUM CHLORATUM 15% KABI 1,5 G/10 ML, OP. 20 AMP. Nazwa międzynaro.: MAGNESIUM SULFATE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-06-09 14:05 do: 
+KALIUM CHLORATUM 15% KABI 1,5 G/10 ML, OP. 20 AMP. Nazwa międzynaro.: INSULIN  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:2 Okres podawania od:2021-06-09 14:05 do: 
+INJ. MAGNESII SULFURICI 20% POLPHARMA 2 G/10 ML, OP. 10 AMP. Nazwa międzynaro.: GLUCOSE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 14:05 do: 
+INJ. MAGNESII SULFURICI 20% POLPHARMA 2 G/10 ML, OP. 10 AMP. Nazwa międzynaro.: POTASSIUM CHLORIDE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 14:05 do: 
+INJ. MAGNESII SULFURICI 20% POLPHARMA 2 G/10 ML, OP. 10 AMP. Nazwa międzynaro.: MAGNESIUM SULFATE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 14:05 do: 
+INJ. MAGNESII SULFURICI 20% POLPHARMA 2 G/10 ML, OP. 10 AMP. Nazwa międzynaro.: INSULIN  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 14:05 do: 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: GLUCOSE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:6 Okres podawania od:2021-06-09 14:05 do: 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: POTASSIUM CHLORIDE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:6 Okres podawania od:2021-06-09 14:05 do: 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: MAGNESIUM SULFATE  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:6 Okres podawania od:2021-06-09 14:05 do: 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: INSULIN  Dawkowanie: 1x(10) Droga podania: Dożylnie  Ilość jedn.:6 Okres podawania od:2021-06-09 14:05 do: 
+FUROSEMIDE KABI 0,02 G/2 ML, OP. 50 AMP. Nazwa międzynaro.: FUROSEMIDE  Dawkowanie: 2x(8,18) Droga podania: Dożylnie  Ilość jedn.:1 Okres podawania od:2021-06-09 18:00 do:2021-06-10 18:00 
+GENSULIN R 300 J.M./3 ML, OP. 10 WK£AD Nazwa międzynaro.: INSULIN  Dawkowanie: 3x(8,14,18) Droga podania: Podskórnie  Ilość jedn.:4 Okres podawania od:2021-06-11 14:00 do:2021-06-17 18:00 
+GENSULIN N 300 J.M./3 ML, OP. 5 WK£AD Nazwa międzynaro.: INSULIN  Dawkowanie: 1x(22) Droga podania: Podskórnie  Ilość jedn.:4 Okres podawania od:2021-06-11 22:00 do:2021-06-17 22:00 
+OPTILYTE OP. 500 ML Nazwa międzynaro.: OPTILYTE OP. 500 ML  Dawkowanie: 2x(8,20) Droga podania: Dożylnie  Ilość jedn.:500 Okres podawania od:2021-06-11 13:02 do:2021-06-13 08:00 
+RELANIUM 0,01 G/2 ML, OP. 50 AMP. Nazwa międzynaro.: DIAZEPAM  Dawkowanie: 3x(6,14,22) Droga podania: Domięśniowo  Ilość jedn.:,5 Okres podawania od:2021-06-11 22:00 do:2021-06-18 06:00 
+MORPHINI SULFAS WZF 0,01 G/1 ML, OP. 10 AMP. Nazwa międzynaro.: MORPHINE  Dawkowanie: 4x(6,10,16,22) Droga podania: Podskórnie  Ilość jedn.:5 Okres podawania od:2021-06-11 22:00 do:2021-06-18 06:00
+
+Inne badania:
+
+Zabiegi diagnostyczne jelita cienkiego - inne     2021-06-02 
+  Przełyk  niezmieniony. 
+Żoładek rozstrzeniowy  z niewielką ilością pólstałej treści. Trzon  antrum z rozpulchnioną błoną śluzowa.  
+Odzwiernik sprawny 
+Dwunastnica opuszka zniekształcona ze zwęzeniem światla do ok 6 mm , nieprzepuszczające aparatu. Okolica zwęzenia z  niezmienioną błoną śluzowa.  
+Badanie kontynuowano apratem przeznoswym .  
+Po wprowdzeniu do jelita  czczego  za pomocą lidera załóżono sondę do żywienia.  
+Kontrolne rtg  koniec sondy w jelicie czczym.  
+Wnioski; 
+Zwężenie dwunastnicy.  
+Założenie sondy do żywienia do jelita  czczego.  
+, 
+
+TK klatki piersiowej bez wzmocnienia kontrastowego     2021-05-29 
+  TK klp bez środka kontrastowego cito 
+Artefakty od kończyn górnych ułożonych wzdłuż ciała. 
+Niewielka ilość płynu w prawej jamie opłucnowej, nad płynem zagęszczenia miąższowe zapalne, zagęszczenia miąższowe w górnym płacie PP, poza tym w obu płucach plamiste zmiany typu matowej szyby, kostki brukowej, jak w przebiegu COVID-19- łącznie zajmują ok. 13 % płuc (P>L), zagęszczenia o wysokiej gęstości stanowią średnio ok. 5 % ( 7% PP i 1% PL). 
+Kilka węzłów chłonnych śródpiersia o wielkości na górnej granicy normy. 
+Lewa jama opłucnowa bez płynu. 
+Kości bez ognisk podejrzanych o mts. 
+Sonda do żołądka, żołądek rozdęty, z poziomem płynnej treści. 
+Na granicy badania: dwie protezy w drogach żółciowych, drogi żółciowe wewnątrzwątrobowe poszerzone, aerocholia, we wnęce wątroby zwapnienie/ złóg wlk. 15 mm, w obrębie wątroby, w obu płatach, rozległe przestrzenie płynowe wlk. do ok. 15 x 9 cm, płat prawy niejednorodny, ww. guz wnęki wątroby naciekający oba przewody wątrobowe, cholangiosepsa ( kwiecień 2021), w TK jb z 15.04.2021 opisywano wątrobę bez innych zmian ogniskowych poza guzem wnęki, jamę otrzewną bez wolnego płynu- rozległe zmiany płynowe w obrębie wątroby mogą odpowiadać zmianom martwiczym wtórne do nacieku npl/sepsy? ropniom? dokładna ocena w TK jb i mm ze środkiem kontrastowym.
+
+TK tętnic klatki piersiowej (w tym aorta)     2021-06-01 
+  W skierowaniu: Podejrzenie zatorowości płucnej DD 21 tys, tendencja narastająca mimo stosowania HDcz. Chory COVID-19 (+). 
+W wywiadach: guz wnęki wątroby naciekający oba przewody wątrobowe oraz prawe gałęzie żyły wrotnej i tętnicy wątrobowej, ponadto naciek i owrzodzenie dwunastnicy z cechami przebytego krwawienia. Przebyte dwukrotnie ECPW. 
+Badanie angioTK wykonane w protokole zatorowości. 
+Pień płucny oraz tętnice obu płuc bez uchwytnych  zmian zatorowych. 
+Pień płucny nieznacznie poszerzony, szer 32mm. 
+Bez ewidentnych cech przeciążenia PK. 
+Aorta ze zmianami miażdzycowymi, nieposzerzona. 
+Uwapnione zmiany miażdzycowe w tt. wieńcowych szczególnie w LAD. 
+Niewielka ilość płynu w prawej jamie opłucnowej, w lewej ślad płynu. 
+Prawa kopuła przepony znacznie uniesiona przez zmiany płynowe w wątrobie -  przypodstawnie i grzbietowo zmiany niedodmowe oraz zagęszczenia miąższowe zapalne,  poza tym w obu płucach plamiste zmiany typu matowej szyby, kostki brukowej, jak w przebiegu COVID-19- łącznie zajmują ok. 15 % płuc (P>L) - porównywalnie jak w badaniu z dnia 29.05.2021r. 
+Kilka węzłów chłonnych śródpiersia o wielkości na górnej granicy normy. 
+Poza tym na granicy badania: 
+- sonda do żołądka, żołądek rozdęty, z poziomem płynnej treści. 
+- dwie protezy w drogach żółciowych, drogi żółciowe wewnątrzwątrobowe poszerzone, aerocholia, złóg - jak poprzednio. 
+- w obrębie wątroby, w obu płatach, rozległe przestrzenie płynowe  oraz zmiany npl jak poprzednio   
+- niewielka zmiana torbielowata śr 5mm  przy tylnym zarysie kręgu Th3, poza tym struktury kostne objęte badaniem bez uchwytnych  zmian.
+
+TK jamy brzusznej lub miednicy małej bez i ze wzmocnieniem kontrastowym     2021-06-03 
+  TK jamy brzusznej i miednicy mniejszej wielofazowo 
+Wątroba powiększona, w jej obrębie rozległa przestrzeń płynowa ciągnąca się podtorebkowo wzdłuż powierzchni przeponowej oraz bocznej aż do dolnego bieguna, o łącznych wymiarach ok. 21 x 20 x 11 cm; ma łączność z poszerzonymi drogami żółciowymi prawego płata wątroby - obraz w pierwszej kolejności sugeruje biloma. Drogi wewnątrzwątrobowe lewego płata nieposzerzone. Niewielka aerocholia. 
+Słabo odgraniczony, hypodensyjny obszar przywnękowo w miąższu wątroby ok. 22 x 17 mm - prawdopodobnie naciek npl. Poniżej widoczna hyperdensyjna, owalna struktura 15 x 12 mm i kilka mniejszych satelitarnie - materiał embolizacyjny? 
+Stan po protezowaniu dróg żółciowych - proteza w PŻW, PWW i PWL oraz druga w PWP. Stan po cholecystektomii. 
+Nie kontrastuje się prawa gałą żyły wrotnej oraz tętnicy wątrobowej - nacieczone? 
+Żołądek rozdęty, wypełniony płynną treścią, dystalnie pętle jelitowe nieposzerzone. Bez widocznej jednoznacznej przeszkody w badaniu TK. Sonda do przewodu pokarmowego - koniec w dystalnym odcinku dwunastnicy. 
+Wolny płyn międzypętlowo, w miednicy mniejszej, wzdłuż prawej i lewej flanki oraz okołośledzionowo. 
+Śledziona trzustka. nadnercza - bez uchwytnych zmian. 
+Nerki położone typowo, bez cech zastoju moczu, bez widocznych złogów. Obustronnie w warstwie korowej widocznych jest kilka zmian o morfologii torbieli/AML. Nadnercza bez zmian. 
+Pęcherz moczowy miernie wypełniony, bez uchwytnych zmian. Gruczoł krokowy o wym. ok. 56 x 50 x 40 mm. 
+Aorta brzuszna nieposzerzona.  
+Węzły chłonne krezkowe i zaotrzewnowe niepowiększone.  
+Struktury kostne bez widocznych zmian ogniskowych i pourazowych. 
+
+RTG śródpiersia-przyłóżkowe(W)     2021-06-07 
+  Założenie wkłucia do tętnicy udowej - kontrola 
+Rtg klp i miednicy mniejszej a-p przyłóżkowe. 
+Wkłucie naczyniowe w rzucie naczyń udowych  i biodrowych prawych - koniec  rzutuje się na dolny zarys stawu krzyżowo-biodrowego prawego. 
+Rtg klp na niepełnym wdechu. 
+Drobne zagęszczenia w dolnych polach obu płuc - po stronie prawej raczej niedodmowe, po lewej zapalne. 
+Sylwetka serca stosowna do projekcji. 
+ Ślad płynu w lewej jamie opłucnowej. 
+Cień protezy w rzucie dróg żółciowych.
+
+Posiew krwi na podłoże do tlenowych posiewów krwi     2021-06-05 
+  05-06-2021  
+ brak wzrostu 
+
+Posiew krwi na podłoże do beztlenowych posiewów krwi     2021-06-05 
+  05-06-2021  
+ brak wzrostu 
+
+Posiew w kierunku pałeczek Enterobacteriaceae wytwarzających karbapenemazy (CPE)     2021-05-30 
+  30-05-2021  
+ ujemny 
+ 
+
+
+
+
+Epikryza
+ 
+ 80-letni pacjent, został przekazany do Kliniki z SOR Mazowieckiego Szpitala Bródnowskiego,z powodu COVID-19 (dodatni test z dnia 28.05.2021) oraz występujących od tygodnia: osłabienia, nasilenia żółtaczki, braku apetytu, epizodu wymiotów treścią pokarmową. W kwietniu br. pacjent hospitalizowany był w Szpitalu Bródnowskim z powodu żółtaczki. W toku diagnostyki rozpoznano guz wnęki wątroby, który naciekał oba przewody wątrobowe oraz prawe gałęzie żyły wrotnej i tętnicy wątrobowej, ponadto naciek i owrzodzenie dwunastnicy z cechami przebytego krwawienia. Wykonano wówczas dwukrotnie ECPW. Pierwsze 13.04 - sfinkterotomia trzustkowa, założono do przewodu Wirsunga protezę pig-tail. Następnie zakontrastowano poszerzone drogi żółciowe wewnątrzwątrobowe amputowane we wnęce wątroby. Wykonano sfinkterotomię żółciową. Założono do prawego przewodu wątrobowego protezę prostą 8,5Fr, 15cm, do lewego protezę prostą 8,5Fr, 12cm. Opuszka dwunastnicy zniekształcona, uciśnięta od strony ściany przedniej przez owalną strukturę. W kolejnej dobie po ECPW wystąpiła cholangiosepsa. Wykonano ratunkowy zabieg ECPW z wymianą protez w drogach żółciowych na protezy samorozprężalne SEMS. Opisano zorganizowany skrzep z sączeniem krwi na brodawce Vatera. W kolejnej dobie dołączyła infekcja C.difficile. Chory był konsultowany przez chirurga onkologa - z uwagi na naciek żyły wrotnej i gałęzi tętnicy wątrobowej zmiana została uznana za nieresekcyjną. 
+Przy przyjęciu do tutejszej Kliniki chory był w stanie ogólnym średnio-ciężkim. W badaniu fizykalnym uwagę zwracało zażółcenie powłok skórnych i twardówek. Brzuch wzdęty, palpacyjnie niebolesny, objawy otrzewnowe ujemne. Obrzęki kończyny dolnych. Założona sonda odbarczająca dożołądkowa - w worku treść żółciowa.  
+W badaniach laboratoryjnych cechy cholestazy, podwyższone wykładniki stanu zapalnego, stężenie kreatyniny powyżej wartości referencyjnych, hipoalbuminemia, niedokrwistość, wydłużony czas protrombinowy. W tomografii komputerowe klatki piersiowej uwidoczniono zmiany zapalne obejmujące 13% miąższu płuc. W tomografii komputerowej jamy brzusznej uwidoczniono rozdęty żołądek, pozaprzewodowy zbiornik żółci oraz zmiany o charakterze rozrostowym. Chorego konsultowano chirurgicznie, zalecając postępowanie zachowawcze.   
+W leczeniu stosowano HDCz, remdesivir, antybiotykoterapię empiryczną, leki przeciwbólowe, nawodnienie dożylne oraz tlenoterapię. Chorego żywiono początkowo przez zagłębnik żołądkowo-jelitowy, jednak uwagi na złą tolerancje, włączono żywienie parenteralne. W trakcie hospitalizacji. pomimo intensyfikacji stosowanego leczenia. stan ulegał stopniowemu pogorszeniu. Dnia 18.06.2021 roku o godzinie około 3:05 nastąpiło nagłe zatrzymanie krążenia. W związku z zaawansowanym procesem nowotworowym oraz niepomyślnym rokowaniem, akcji reanimacyjnej nie podejmowano. Zgon stwierdzono o  godzinie 3:20. 	
+
+
+
+
+
+
+
+ 
+
+Kierownik Kliniki/Oddziału: 
+prof.dr hab.n.med GRAŻYNA RYDZEWSKA-WYSZKOWSKA|Lek. Prowadzący: 
+  MAGDALENA PAWLIK|
+
+

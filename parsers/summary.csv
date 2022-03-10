@@ -1,251 +1,311 @@
-;Karta;Wyniki
-1;Not found;Found
-2;Not found;Found
-3;Not found;Found
-4;Not found;Found
-5;Not found;Found
-6;Not found;Found
-7;Not found;Found
-8;Not found;Found
-9;Not found;Found
-10;Not found;Found
-11;Not found;Found
-12;Not found;Found
-13;Not found;Found
-14;Not found;Found
-15;Not found;Found
-16;Not found;Found
-17;Not found;Found
-18;Not found;Found
-19;Not found;Found
-20;Not found;Found
-21;Not found;Found
-22;Not found;Found
-23;Not found;Found
-24;Not found;Found
-25;Not found;Found
-26;Not found;Found
-27;Not found;Found
-28;Not found;Found
-29;Not found;Found
-30;Not found;Error!
-31;Not found;Found
-32;Not found;Found
-33;Not found;Found
-34;Not found;Found
-35;Not found;Found
-36;Not found;Found
-37;Not found;Found
-38;Not found;Found
-39;Not found;Found
-40;Not found;Found
-41;Not found;Found
-42;Not found;Found
-43;Not found;Found
-44;Not found;Found
-45;Not found;Found
-46;Not found;Found
-47;Not found;Found
-48;Not found;Found
-49;Not found;Found
-50;Not found;Error!
-51;Not found;Found
-52;Not found;Found
-53;Not found;Found
-54;Not found;Found
-55;Not found;Found
-56;Not found;Found
-57;Not found;Found
-58;Not found;Found
-59;Not found;Found
-60;Not found;Found
-61;Not found;Found
-62;Not found;Found
-63;Not found;Found
-64;Not found;Found
-65;Not found;Found
-66;Not found;Found
-67;Not found;Found
-68;Not found;Found
-69;Not found;Found
-70;Found;Found
-71;Found;Found
-72;Found;Found
-73;Found;Found
-74;Found;Found
-75;Found;Found
-76;Found;Found
-77;Found;Found
-78;Found;Found
-79;Found;Found
-80;Found;Found
-81;Found;Found
-82;Found;Found
-83;Found;Found
-84;Found;Found
-85;Found;Found
-86;Found;Found
-87;Found;Found
-88;Found;Found
-89;Found;Found
-90;Found;Found
-91;Found;Found
-92;Found;Found
-93;Found;Found
-94;Found;Found
-95;Found;Found
-96;Found;Found
-97;Found;Found
-98;Found;Found
-99;Found;Found
-100;Found;Found
-101;Found;Found
-102;Found;Found
-103;Found;Found
-104;Found;Found
-105;Found;Found
-106;Found;Found
-107;Found;Found
-108;Found;Found
-109;Found;Found
-110;Found;Found
-111;Found;Found
-112;Found;Found
-113;Found;Found
-114;Found;Found
-115;Found;Found
-116;Found;Found
-117;Found;Found
-118;Found;Found
-119;Found;Found
-120;Found;Found
-121;Found;Found
-122;Found;Found
-123;Found;Found
-124;Found;Found
-125;Found;Found
-126;Found;Found
-127;Found;Found
-128;Found;Found
-129;Found;Found
-130;Found;Found
-131;Found;Found
-132;Found;Found
-133;Found;Found
-134;Found;Found
-135;Found;Found
-136;Found;Found
-137;Found;Found
-138;Found;Found
-139;Found;Found
-140;Found;Found
-141;Found;Found
-142;Found;Found
-143;Found;Found
-144;Found;Found
-145;Found;Found
-146;Found;Found
-147;Found;Found
-148;Found;Found
-149;Found;Found
-150;Found;Found
-151;Not found;Not found
-152;Not found;Not found
-153;Not found;Not found
-154;Not found;Not found
-155;Not found;Not found
-156;Not found;Not found
-157;Not found;Not found
-158;Not found;Not found
-159;Not found;Not found
-160;Not found;Not found
-161;Not found;Not found
-162;Not found;Not found
-163;Not found;Not found
-164;Not found;Not found
-165;Not found;Not found
-166;Not found;Not found
-167;Not found;Not found
-168;Not found;Not found
-169;Not found;Not found
-170;Not found;Not found
-171;Not found;Not found
-172;Not found;Not found
-173;Not found;Not found
-174;Not found;Not found
-175;Not found;Not found
-176;Not found;Not found
-177;Not found;Not found
-178;Not found;Not found
-179;Not found;Not found
-180;Not found;Not found
-181;Not found;Not found
-182;Not found;Not found
-183;Not found;Not found
-184;Not found;Not found
-185;Not found;Not found
-186;Not found;Not found
-187;Not found;Not found
-188;Not found;Not found
-189;Not found;Not found
-190;Not found;Not found
-191;Not found;Not found
-192;Not found;Not found
-193;Not found;Not found
-194;Not found;Not found
-195;Not found;Not found
-196;Not found;Not found
-197;Not found;Not found
-198;Not found;Not found
-199;Not found;Not found
-200;Not found;Not found
-201;Found;Found
-202;Found;Found
-203;Found;Found
-204;Found;Found
-205;Found;Found
-206;Found;Found
-207;Found;Found
-208;Found;Found
-209;Found;Found
-210;Found;Found
-211;Found;Found
-212;Found;Found
-213;Found;Found
-214;Found;Found
-215;Found;Found
-216;Found;Found
-217;Found;Found
-218;Found;Found
-219;Found;Found
-220;Found;Found
-221;Found;Found
-222;Found;Found
-223;Found;Found
-224;Found;Found
-225;Found;Found
-226;Found;Found
-227;Found;Found
-228;Found;Found
-229;Found;Found
-230;Found;Found
-231;Found;Found
-232;Found;Found
-233;Found;Found
-234;Found;Found
-235;Found;Found
-236;Found;Found
-237;Found;Found
-238;Found;Found
-239;Found;Found
-240;Found;Found
-241;Found;Found
-242;Found;Found
-243;Found;Found
-244;Found;Found
-245;Found;Found
-246;Found;Found
-247;Found;Found
-248;Found;Found
-249;Found;Found
-250;Found;Found
+;Karta;Wyniki;Metadane;Przetworzone próbki;Data przyjęcia i wypisu
+1;Found;Found;Not found;2;Found
+2;Missing MHR;Found;Not found;5;Found
+3;Not found;Not found;Not found;5;Found
+4;Not found;Not found;Not found;6;Found
+5;Not found;Not found;Not found;6;Found
+6;Not found;Not found;Not found;6;Found
+7;Not found;Not found;Not found;2;Found
+8;Not found;Not found;Not found;0;Found
+9;Not found;Not found;Not found;0;Found
+10;Not found;Not found;Not found;3;Not found
+11;Not found;Not found;Not found;3;Found
+12;Not found;Not found;Not found;4;Found
+13;Not found;Not found;Not found;4;Found
+14;Not found;Not found;Not found;2;Found
+15;Not found;Not found;Not found;3;Found
+16;Not found;Not found;Not found;5;Found
+17;Not found;Not found;Not found;5;Found
+18;Not found;Not found;Not found;0;Found
+19;Not found;Not found;Not found;5;Found
+20;Not found;Not found;Not found;0;Not found
+21;Not found;Not found;Not found;3;Found
+22;Not found;Not found;Not found;4;Found
+23;Not found;Not found;Not found;4;Found
+24;Not found;Not found;Not found;2;Found
+25;Not found;Not found;Not found;0;Found
+26;Not found;Not found;Not found;4;Found
+27;Not found;Not found;Not found;0;Not found
+28;Not found;Not found;Not found;2;Found
+29;Not found;Not found;Not found;0;Found
+30;Not found;Not found;Not found;0;Found
+31;Not found;Not found;Not found;4;Found
+32;Not found;Not found;Not found;5;Found
+33;Not found;Not found;Not found;0;Found
+34;Not found;Not found;Not found;4;Not found
+35;Not found;Not found;Not found;0;Found
+36;Not found;Not found;Not found;5;Not found
+37;Not found;Not found;Not found;2;Found
+38;Not found;Not found;Not found;0;Found
+39;Not found;Not found;Not found;5;Found
+40;Not found;Not found;Not found;2;Found
+41;Not found;Not found;Not found;2;Not found
+42;Not found;Not found;Not found;3;Found
+43;Not found;Not found;Not found;2;Found
+44;Not found;Not found;Not found;0;Found
+45;Not found;Not found;Not found;0;Found
+46;Not found;Not found;Not found;0;Found
+47;Not found;Not found;Not found;3;Found
+48;Not found;Not found;Not found;5;Not found
+49;Not found;Not found;Not found;5;Found
+50;Not found;Not found;Not found;0;Found
+51;Not found;Not found;Not found;5;Found
+52;Not found;Not found;Not found;2;Found
+53;Not found;Not found;Not found;5;Not found
+54;Not found;Not found;Not found;4;Found
+55;Not found;Not found;Not found;0;Found
+56;Not found;Not found;Not found;6;Found
+57;Not found;Not found;Not found;0;Found
+58;Not found;Not found;Not found;0;Found
+59;Not found;Not found;Not found;0;Found
+60;Not found;Not found;Not found;3;Not found
+61;Not found;Not found;Not found;6;Found
+62;Not found;Not found;Not found;0;Found
+63;Not found;Not found;Not found;6;Found
+64;Not found;Not found;Not found;4;Found
+65;Not found;Not found;Not found;0;Not found
+66;Not found;Not found;Not found;0;Found
+67;Not found;Not found;Not found;0;Not found
+68;Not found;Not found;Not found;0;Not found
+69;Not found;Not found;Not found;0;Found
+70;Not found;Not found;Found;6;Found
+71;Not found;Not found;Found;0;Found
+72;Not found;Not found;Found;0;Found
+73;Not found;Not found;Found;0;Found
+74;Not found;Not found;Found;0;Found
+75;Not found;Not found;Found;0;Found
+76;Not found;Not found;Found;4;Found
+77;Not found;Not found;Found;6;Found
+78;Not found;Not found;Found;5;Found
+79;Not found;Not found;Found;0;Found
+80;Not found;Not found;Found;0;Found
+81;Not found;Not found;Found;6;Found
+82;Not found;Not found;Found;6;Found
+83;Not found;Not found;Found;0;Found
+84;Not found;Not found;Found;0;Found
+85;Not found;Not found;Found;0;Found
+86;Not found;Not found;Found;0;Found
+87;Not found;Not found;Found;0;Found
+88;Not found;Not found;Found;0;Found
+89;Not found;Not found;Found;0;Found
+90;Not found;Not found;Found;0;Found
+91;Not found;Not found;Found;0;Found
+92;Not found;Not found;Found;0;Found
+93;Not found;Not found;Found;0;Found
+94;Not found;Not found;Found;6;Found
+95;Not found;Not found;Found;0;Found
+96;Not found;Not found;Found;0;Found
+97;Not found;Not found;Found;0;Found
+98;Not found;Not found;Found;0;Found
+99;Not found;Not found;Found;0;Found
+100;Not found;Not found;Found;4;Found
+101;Not found;Not found;Found;0;Found
+102;Not found;Not found;Found;0;Found
+103;Not found;Not found;Found;0;Found
+104;Not found;Not found;Found;0;Found
+105;Not found;Not found;Found;0;Found
+106;Not found;Not found;Found;0;Found
+107;Not found;Not found;Found;0;Found
+108;Not found;Not found;Found;0;Found
+109;Not found;Not found;Found;0;Found
+110;Not found;Not found;Found;0;Found
+111;Not found;Not found;Found;0;Found
+112;Not found;Not found;Found;5;Found
+113;Not found;Not found;Found;0;Found
+114;Not found;Not found;Found;0;Found
+115;Not found;Not found;Found;0;Found
+116;Not found;Not found;Found;0;Found
+117;Not found;Not found;Found;0;Found
+118;Not found;Not found;Found;0;Found
+119;Not found;Not found;Found;0;Found
+120;Not found;Not found;Found;0;Found
+121;Not found;Not found;Found;4;Found
+122;Not found;Not found;Found;0;Found
+123;Not found;Not found;Found;0;Found
+124;Not found;Not found;Found;0;Found
+125;Not found;Not found;Found;0;Found
+126;Not found;Not found;Found;6;Found
+127;Not found;Not found;Found;0;Found
+128;Not found;Not found;Found;0;Found
+129;Not found;Not found;Found;0;Found
+130;Not found;Not found;Found;0;Found
+131;Not found;Not found;Found;0;Found
+132;Not found;Not found;Found;6;Found
+133;Not found;Not found;Found;0;Found
+134;Not found;Not found;Found;0;Found
+135;Not found;Not found;Found;0;Found
+136;Not found;Not found;Found;0;Found
+137;Not found;Not found;Found;0;Found
+138;Not found;Not found;Found;0;Found
+139;Not found;Not found;Found;0;Found
+140;Not found;Not found;Found;4;Found
+141;Not found;Not found;Found;0;Found
+142;Not found;Not found;Found;6;Found
+143;Not found;Not found;Found;0;Found
+144;Not found;Not found;Found;0;Found
+145;Not found;Not found;Found;0;Found
+146;Not found;Not found;Found;0;Found
+147;Not found;Not found;Found;0;Found
+148;Not found;Not found;Found;0;Found
+149;Not found;Not found;Found;0;Found
+150;Not found;Not found;Found;0;Found
+151;Not found;Not found;Found;0;Found
+152;Not found;Not found;Found;0;Found
+153;Not found;Not found;Found;0;Found
+154;Not found;Not found;Found;0;Found
+155;Not found;Not found;Found;0;Found
+156;Not found;Not found;Found;0;Found
+157;Not found;Not found;Found;0;Found
+158;Not found;Not found;Found;0;Found
+159;Not found;Not found;Found;0;Found
+160;Not found;Not found;Found;0;Found
+161;Not found;Not found;Found;0;Found
+162;Not found;Not found;Found;0;Found
+163;Not found;Not found;Found;0;Found
+164;Not found;Not found;Found;0;Found
+165;Not found;Not found;Found;0;Found
+166;Not found;Not found;Found;0;Found
+167;Not found;Not found;Found;0;Found
+168;Not found;Not found;Found;0;Found
+169;Not found;Not found;Found;0;Found
+170;Not found;Not found;Found;0;Found
+171;Not found;Not found;Found;6;Found
+172;Not found;Not found;Found;0;Found
+173;Not found;Not found;Found;0;Found
+174;Not found;Not found;Found;0;Found
+175;Not found;Not found;Found;0;Found
+176;Not found;Not found;Found;0;Found
+177;Not found;Not found;Found;0;Found
+178;Not found;Not found;Found;0;Found
+179;Not found;Not found;Found;0;Found
+180;Not found;Not found;Found;6;Found
+181;Not found;Not found;Found;0;Found
+182;Not found;Not found;Found;6;Found
+183;Not found;Not found;Found;0;Found
+184;Not found;Not found;Found;0;Found
+185;Not found;Not found;Found;6;Found
+186;Not found;Not found;Found;0;Found
+187;Not found;Not found;Found;0;Found
+188;Not found;Not found;Found;6;Found
+189;Not found;Not found;Found;0;Found
+190;Not found;Not found;Found;0;Found
+191;Not found;Not found;Found;0;Found
+192;Not found;Not found;Found;6;Found
+193;Not found;Not found;Found;0;Found
+194;Not found;Not found;Found;0;Found
+195;Not found;Not found;Found;6;Found
+196;Not found;Not found;Found;6;Found
+197;Not found;Not found;Found;0;Found
+198;Not found;Not found;Found;0;Found
+199;Not found;Not found;Found;1;Found
+200;Not found;Not found;Found;0;Found
+201;Not found;Not found;Found;6;Found
+202;Not found;Not found;Found;0;Found
+203;Not found;Not found;Found;0;Found
+204;Not found;Not found;Found;0;Found
+205;Not found;Not found;Found;0;Found
+206;Not found;Not found;Found;4;Found
+207;Not found;Not found;Found;0;Found
+208;Not found;Not found;Found;0;Found
+209;Not found;Not found;Found;0;Found
+210;Not found;Not found;Found;0;Found
+211;Not found;Not found;Found;0;Found
+212;Not found;Not found;Found;0;Found
+213;Not found;Not found;Found;0;Found
+214;Not found;Not found;Found;0;Found
+215;Not found;Not found;Found;0;Found
+216;Not found;Not found;Found;0;Found
+217;Not found;Not found;Found;0;Found
+218;Not found;Not found;Found;6;Found
+219;Not found;Not found;Found;0;Found
+220;Not found;Not found;Found;1;Found
+221;Not found;Not found;Found;0;Found
+222;Not found;Not found;Found;4;Found
+223;Not found;Not found;Found;6;Found
+224;Not found;Not found;Found;0;Found
+225;Not found;Not found;Found;0;Found
+226;Not found;Not found;Found;0;Found
+227;Not found;Not found;Found;0;Found
+228;Not found;Not found;Found;4;Found
+229;Not found;Not found;Found;0;Found
+230;Not found;Not found;Found;0;Found
+231;Not found;Not found;Found;0;Found
+232;Not found;Not found;Found;0;Found
+233;Not found;Not found;Found;0;Found
+234;Not found;Not found;Found;0;Found
+235;Not found;Not found;Found;5;Found
+236;Not found;Not found;Found;0;Found
+237;Not found;Not found;Found;0;Found
+238;Not found;Not found;Found;0;Found
+239;Not found;Not found;Found;0;Found
+240;Not found;Not found;Found;0;Found
+241;Not found;Not found;Found;5;Found
+242;Not found;Not found;Found;4;Found
+243;Not found;Not found;Found;0;Found
+244;Not found;Not found;Found;0;Found
+245;Not found;Not found;Found;0;Found
+246;Not found;Not found;Found;0;Found
+247;Not found;Not found;Found;0;Found
+248;Not found;Not found;Found;0;Found
+249;Not found;Not found;Found;0;Found
+250;Not found;Not found;Found;6;Found
+251;Not found;Not found;Not found;0;Found
+252;Not found;Not found;Not found;0;Found
+253;Not found;Not found;Not found;0;Found
+254;Not found;Not found;Not found;0;Found
+255;Not found;Not found;Not found;0;Found
+256;Not found;Not found;Not found;0;Found
+257;Not found;Not found;Not found;0;Found
+258;Not found;Not found;Not found;0;Found
+259;Not found;Not found;Not found;0;Not found
+260;Not found;Not found;Not found;0;Found
+261;Not found;Not found;Not found;1;Found
+262;Not found;Not found;Not found;0;Found
+263;Not found;Not found;Not found;0;Found
+264;Not found;Not found;Not found;0;Found
+265;Not found;Not found;Not found;6;Found
+266;Not found;Not found;Not found;0;Not found
+267;Not found;Not found;Not found;0;Found
+268;Not found;Not found;Not found;0;Found
+269;Not found;Not found;Not found;6;Found
+270;Not found;Not found;Not found;0;Found
+271;Not found;Not found;Not found;6;Found
+272;Not found;Not found;Not found;0;Found
+273;Not found;Not found;Not found;0;Found
+274;Not found;Not found;Not found;0;Found
+275;Not found;Not found;Not found;0;Found
+276;Not found;Not found;Not found;0;Found
+277;Not found;Not found;Not found;0;Found
+278;Not found;Not found;Not found;0;Found
+279;Not found;Not found;Not found;0;Found
+280;Not found;Not found;Not found;0;Found
+281;Not found;Not found;Not found;0;Found
+282;Not found;Not found;Not found;0;Found
+283;Not found;Not found;Not found;0;Found
+284;Not found;Not found;Not found;0;Found
+285;Not found;Not found;Not found;0;Found
+286;Not found;Not found;Not found;5;Found
+287;Not found;Not found;Not found;6;Found
+288;Not found;Not found;Not found;0;Found
+289;Not found;Not found;Not found;0;Found
+290;Not found;Not found;Not found;0;Found
+291;Not found;Not found;Not found;0;Found
+292;Not found;Not found;Not found;6;Found
+293;Not found;Not found;Not found;0;Found
+294;Not found;Not found;Not found;0;Found
+295;Not found;Not found;Not found;0;Found
+296;Not found;Not found;Not found;6;Found
+297;Not found;Not found;Not found;2;Found
+298;Not found;Not found;Not found;0;Found
+299;Not found;Not found;Not found;0;Not found
+300;Not found;Not found;Not found;6;Found
+301;Not found;Not found;Not found;0;Found
+302;Not found;Not found;Not found;0;Not found
+303;Not found;Not found;Not found;0;Found
+304;Not found;Not found;Not found;0;Found
+305;Not found;Not found;Not found;0;Found
+306;Not found;Not found;Not found;0;Found
+307;Not found;Not found;Not found;0;Found
+308;Not found;Not found;Not found;0;Found
+309;Not found;Not found;Not found;0;Found
+310;Not found;Not found;Not found;0;Found
