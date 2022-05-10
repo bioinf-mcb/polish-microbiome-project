@@ -10,7 +10,7 @@ from enum import Enum
 from utils.xls_parser import XLSParser
 from utils.rtf_parser import RTFParser
 from utils.odt_parser import ODTParser
-from utils.resolve_files import PatientResolver
+from utils.resolve_files import PatientResolver, ParserRouter
 import glob
 import pandas as pd
 import os
@@ -24,7 +24,7 @@ import biom
 import json
 
 #%%
-ROOT_DIR = "/storage/PawelLab/wwydmanski/NCBR-COVID/FTP_DATA/data/upload/"
+ROOT_DIR = "/storage/PawelLab/wwydmanski/NCBR-COVID/FTP_DATA/data/rolandkadaj/upload"
 
 #%%
 class FileState:
@@ -87,7 +87,7 @@ dfs = manager.list()
 threads = []
 batch = 50
 main = True
-for i in range(1, 311, batch):
+for i in range(1, 322, batch):
     t = multiprocessing.Process(target=process_file_list, args=(list(range(i, i+batch)), dfs, main))
     t.start()
     threads.append(t)
@@ -100,15 +100,18 @@ for i in threads:
 dataframe = pd.concat(dfs)
 dataframe.index = dataframe.index.astype(int)
 dataframe = dataframe.sort_index()
-for i in range(1, 311):
+for i in range(1, 322):
     if i not in dataframe.index:
         dataframe.loc[i] = [FileState.NOT_FOUND]*4
 
-#%% Add info about metadata 
+#%% Add info about metadata
 for fname in glob.glob(f"{ROOT_DIR}/*/zestawienie*.xlsx"):
     patient_df = pd.read_excel(fname)
     for _, row in patient_df.iterrows():
-        i = row['Numer pacjenta ']
+        try:
+            i = row['Numer pacjenta ']
+        except KeyError:
+            i = row['ID_pacjenta']
         dataframe.loc[i, "Metadane"] = FileState.FOUND
 
 dataframe = dataframe.fillna(FileState.NOT_FOUND)
@@ -140,10 +143,22 @@ def _try_find_meta(x):
     try:
         if not pd.isna(metadata.loc[x, "admission_date"]) and not pd.isna(metadata.loc[x, "final_date"]):
             return "Found"
-        else:
-            return "Not found"
     except KeyError:
+        pass
+
+    lab_res, patient_card = resolver.get_files(x)
+    if patient_card is None:
         return "Not found"
+    
+    try:
+        start, end = ParserRouter.route(patient_card).parse_hospitalization_time(patient_card)
+    except StopIteration:
+        return "Not found"
+    if start is not None:
+        return "Found"
+    return "Not found"
+
+
         
 metadata = pd.read_csv("tmp/metadata.csv").set_index("patient_id")
 dataframe["Data przyjęcia i wypisu"] = dataframe.index.map(_try_find_meta)
