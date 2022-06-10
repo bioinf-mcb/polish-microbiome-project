@@ -1,0 +1,40 @@
+version: "3.7"
+services:
+  django:
+    networks: 
+      - redcap_redcap_network
+    build: ./backend
+    container_name: django_backend
+    restart: always
+    volumes:
+      - ./backend:/app/backend
+      - ./docs:/app/docs
+      - ./data:/data
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=backend.settings.development
+    stdin_open: true
+    tty: true
+    command: python manage.py runserver 0.0.0.0:8000
+    env_file:
+      - .env
+    
+  react:
+    build: ./frontend
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - ENDPOINT=http://localhost:8000
+    # depends_on:
+      # - django
+    command: yarn start
+
+networks:
+  redcap_redcap_network:
+    external: true
